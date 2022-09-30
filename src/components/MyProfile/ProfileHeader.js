@@ -35,11 +35,11 @@ export default function ProfileHeader() {
                                 </button>
                                 { /* <!-- Card share action dropdown menu --> */ }
                                 <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="profileAction2">
-                                    <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Share profile in a message</a></li>
-                                    <li><a className="dropdown-item" href="#"> <i className="bi bi-file-earmark-pdf fa-fw pe-2"></i>Save your profile to PDF</a></li>
-                                    <li><a className="dropdown-item" href="#"> <i className="bi bi-lock fa-fw pe-2"></i>Lock profile</a></li>
+                                    <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Share profile in a message</Link></li>
+                                    <li><Link className="dropdown-item" to="#"> <i className="bi bi-file-earmark-pdf fa-fw pe-2"></i>Save your profile to PDF</Link></li>
+                                    <li><Link className="dropdown-item" to="#"> <i className="bi bi-lock fa-fw pe-2"></i>Lock profile</Link></li>
                                     <li><hr className="dropdown-divider" /></li>
-                                    <li><a className="dropdown-item" href="#"> <i className="bi bi-gear fa-fw pe-2"></i>Profile settings</a></li>
+                                    <li><Link className="dropdown-item" to="#"> <i className="bi bi-gear fa-fw pe-2"></i>Profile settings</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -57,11 +57,11 @@ export default function ProfileHeader() {
                     <ul className="nav nav-bottom-line align-items-center justify-content-center justify-content-md-start mb-0 border-0">
                         <li className="nav-item"> <Link className="nav-link active" to="/my-profile"> Posts </Link> </li>
                         <li className="nav-item"> <Link className="nav-link" to="/my-profile-about"> About </Link> </li>
-                        <li className="nav-item"> <a className="nav-link" href="my-profile-connections.html"> Connections <span className="badge bg-success bg-opacity-10 text-success small"> 230</span> </a> </li>
-                        <li className="nav-item"> <a className="nav-link" href="my-profile-media.html"> Media</a> </li>
-                        <li className="nav-item"> <a className="nav-link" href="my-profile-videos.html"> Videos</a> </li>
-                        <li className="nav-item"> <a className="nav-link" href="my-profile-events.html"> Events</a> </li>
-                        <li className="nav-item"> <a className="nav-link" href="my-profile-activity.html"> Activity</a> </li>
+                        <li className="nav-item"> <Link className="nav-link" to="/my-profile-connections"> Connections <span className="badge bg-success bg-opacity-10 text-success small"> 230</span> </Link> </li>
+                        <li className="nav-item"> <Link className="nav-link" to="/my-profile-media"> Media</Link> </li>
+                        <li className="nav-item"> <Link className="nav-link" to="/my-profile-videos"> Videos</Link> </li>
+                        <li className="nav-item"> <Link className="nav-link" to="/my-profile-events"> Events</Link> </li>
+                        <li className="nav-item"> <Link className="nav-link" to="/my-profile-activity"> Activity</Link> </li>
                     </ul>
                 </div>
             </div>

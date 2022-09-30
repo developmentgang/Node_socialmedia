@@ -2,6 +2,7 @@ import Navigation from "../components/Main/Navigation"
 import { BrowserRouter, Routes, Route} from "react-router-dom"
 import Home from "./Home"
 import MyProfile from "./MyProfile"
+import Blog from "./Blog"
 
 
 export default function Main() {
@@ -17,9 +18,33 @@ export default function Main() {
                 {/* Home Page */}
                 <Route path="/" element={<Home />} />
                 {/* Profile Page */}
+
                 <Route path="/my-profile" element={<MyProfile page="my-profile"/>} />  
                 {/* Profile About Page */}
+
                 <Route path="/my-profile-about" element={<MyProfile page="my-profile-about"/>} />  
+                {/* Profile About Connections */}
+
+                <Route path="/my-profile-connections" element={<MyProfile page="my-profile-connections"/>} />  
+
+                {/* Profile About Media */}
+                <Route path="my-profile-media" element={<MyProfile page="my-profile-media"/>} />
+
+                {/* Profile About Media */}
+                <Route path="my-profile-media" element={<MyProfile page="my-profile-media"/>} />  
+                
+                {/* Profile About Videos */}
+                <Route path="my-profile-videos" element={<MyProfile page="my-profile-videos"/>} />  
+                
+                {/* Profile About Events */}
+                <Route path="my-profile-events" element={<MyProfile page="my-profile-events"/>} /> 
+                
+                {/* Profile About Activity */}
+                <Route path="my-profile-activity" element={<MyProfile page="my-profile-activity"/>} />
+
+                {/* Blog */}
+                <Route path="blog" element={<Blog />} /> 
+
               </Routes>
             {/* pages end here */}
           </div>
