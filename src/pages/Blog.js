@@ -5,11 +5,13 @@ import BlogSidebar from '../components/Blog/BlogSidebar'
 export default function Blog() {
   return (
     <>
-    <div class="col-lg-8">
+    <div className="col-lg-8">
         <BlogList />
     </div>
-    <div class="col-lg-4">
+    <div className="col-lg-4">
+      <div className="row g-4">
         <BlogSidebar />
+      </div>
     </div>
     </>
   )

@@ -4,7 +4,7 @@ export default function AboutCard() {
   return (
     <>
     { /* <!-- Card START --> */ }
-            
+            <div className='col-md-6 col-lg-12'> 
               <div className="card">
                 <div className="card-header border-0 pb-0">
                   <h5 className="card-title">About</h5>
@@ -24,6 +24,7 @@ export default function AboutCard() {
               </div>
            
             { /* <!-- Card END --> */ }
+         </div>
     </>
   )
 }

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function ProfileCol() {
   return (
     <>
-    <div className="col-lg-3">
+    
   { /* <!-- Advanced filter responsive toggler START --> */ }
   <div className="d-flex align-items-center d-lg-none">
     <button className="border-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
@@ -41,11 +41,11 @@ export default function ProfileCol() {
             <div className="text-center">
               { /* <!-- Avatar --> */ }
               <div className="avatar avatar-lg mt-n5 mb-3">
-                <a href="#!"><img className="avatar-img rounded border border-white border-3"
-                    src="assets/images/avatar/07.jpg" alt="" /></a>
+                <Link to="#!"><img className="avatar-img rounded border border-white border-3"
+                    src="assets/images/avatar/07.jpg" alt="" /></Link>
               </div>
               { /* <!-- Info --> */ }
-              <h5 className="mb-0"> <a href="#!">Sam Lanson </a> </h5>
+              <h5 className="mb-0"> <Link to="#!">Sam Lanson </Link> </h5>
               <small>Web Developer at Webestica</small>
               <p className="mt-3">I'd love to change the world, but they won’t give me the source code.</p>
 
@@ -92,20 +92,20 @@ export default function ProfileCol() {
                     src="assets/images/icon/earth-outline-filled.svg" alt="" /><span>Latest News </span></Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="events.html"> <img className="me-2 h-20px fa-fw"
-                    src="assets/images/icon/calendar-outline-filled.svg" alt="" /><span>Events </span></a>
+                <Link className="nav-link" to="/events"> <img className="me-2 h-20px fa-fw"
+                    src="assets/images/icon/calendar-outline-filled.svg" alt="" /><span>Events </span></Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="groups.html"> <img className="me-2 h-20px fa-fw"
-                    src="assets/images/icon/chat-outline-filled.svg"  /><span>Groups </span></a>
+                <Link className="nav-link" to="/groups"> <img className="me-2 h-20px fa-fw"
+                    src="assets/images/icon/chat-outline-filled.svg"  /><span>Groups </span></Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="notifications.html"> <img className="me-2 h-20px fa-fw"
-                    src="assets/images/icon/notification-outlined-filled.svg" alt="" /><span>Notifications </span></a>
+                <Link className="nav-link" to="/notifications"> <img className="me-2 h-20px fa-fw"
+                    src="assets/images/icon/notification-outlined-filled.svg" alt="" /><span>Notifications </span></Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="settings.html"> <img className="me-2 h-20px fa-fw"
-                    src="assets/images/icon/cog-outline-filled.svg" alt="" /><span>Settings </span></a>
+                <Link className="nav-link" to="/settings"> <img className="me-2 h-20px fa-fw"
+                    src="assets/images/icon/cog-outline-filled.svg" alt="" /><span>Settings </span></Link>
               </li>
             </ul>
             { /* <!-- Side Nav END --> */ }
@@ -113,7 +113,7 @@ export default function ProfileCol() {
           { /* <!-- Card body END --> */ }
           { /* <!-- Card footer --> */ }
           <div className="card-footer text-center py-2">
-            <a className="btn btn-link btn-sm" href="my-profile.html">View Profile </a>
+            <Link className="btn btn-link btn-sm" to="my-profile.html">View Profile </Link>
           </div>
         </div>
         { /* <!-- Card END --> */ }
@@ -121,34 +121,34 @@ export default function ProfileCol() {
         { /* <!-- Helper link START --> */ }
         <ul className="nav small mt-4 justify-content-center lh-1">
           <li className="nav-item">
-            <a className="nav-link" href="my-profile-about.html">About</a>
+            <Link className="nav-link" to="my-profile-about.html">About</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="settings.html">Settings</a>
+            <Link className="nav-link" to="settings.html">Settings</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" target="_blank" href="https://support.webestica.com/login">Support </a>
+            <Link className="nav-link" target="_blank" to="https://support.webestica.com/login">Support </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" target="_blank" href="docs/index.html">Docs </a>
+            <Link className="nav-link" target="_blank" to="docs/index.html">Docs </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="help.html">Help</a>
+            <Link className="nav-link" to="help.html">Help</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="privacy-and-terms.html">Privacy &amp; terms</a>
+            <Link className="nav-link" to="privacy-and-terms.html">Privacy &amp; terms</Link>
           </li>
         </ul>
         { /* <!-- Helper link END --> */ }
         { /* <!-- Copyright --> */ }
-        <p className="small text-center mt-1">©2022 <a className="text-body" target="_blank"
-            href="https://www.webestica.com/"> Webestica </a></p>
+        <p className="small text-center mt-1">©2022 <Link className="text-body" target="_blank"
+            to="https://www.webestica.com/"> Webestica </Link></p>
       </div>
     </div>
   </nav>
 
   { /* <!-- Navbar END--> */ }
-</div>
+
       
     </>
   )

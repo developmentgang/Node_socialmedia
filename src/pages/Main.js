@@ -3,6 +3,11 @@ import { BrowserRouter, Routes, Route} from "react-router-dom"
 import Home from "./Home"
 import MyProfile from "./MyProfile"
 import Blog from "./Blog"
+import Events from "./Events"
+import Notifications from "./Notifications"
+import Group from "./Group"
+import Settings from "./Settings"
+
 
 
 export default function Main() {
@@ -43,8 +48,20 @@ export default function Main() {
                 <Route path="my-profile-activity" element={<MyProfile page="my-profile-activity"/>} />
 
                 {/* Blog */}
-                <Route path="blog" element={<Blog />} /> 
+                <Route path="blog" element={<Blog />} />
 
+                {/* Events */}
+                <Route path="events" element={<Events />} /> 
+
+                {/* Notifications */}
+                <Route path="notifications" element={<Notifications />} /> 
+
+                {/* Notifications */}
+                <Route path="groups" element={<Group />}></Route>
+                
+                {/* Settings */}
+                <Route path="settings" element={<Settings />}></Route>
+              
               </Routes>
             {/* pages end here */}
           </div>
