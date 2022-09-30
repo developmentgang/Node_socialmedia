@@ -3,8 +3,8 @@ import TinySlider from './TinySlider'
 
 export default function PostCol() {
   return (
-   
-    <div className="col-md-8 col-lg-6 vstack gap-4">
+    <>
+    
       { /* <!-- Story START --> */ }
       {/* <TinySlider /> */}
       { /* <!-- Story END --> */ }
@@ -1341,7 +1341,7 @@ export default function PostCol() {
         </a>
         { /* <!-- Load more button END --> */ }
 
-    </div>
+    </>
     
    
 
