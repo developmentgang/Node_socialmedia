@@ -88,7 +88,7 @@ export default function ProfileCol() {
                     src="assets/images/icon/person-outline-filled.svg" alt="" /><span>Connections </span></Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="blog"> <img className="me-2 h-20px fa-fw"
+                <Link className="nav-link" to="/blog"> <img className="me-2 h-20px fa-fw"
                     src="assets/images/icon/earth-outline-filled.svg" alt="" /><span>Latest News </span></Link>
               </li>
               <li className="nav-item">
