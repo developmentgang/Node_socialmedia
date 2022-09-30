@@ -84,12 +84,12 @@ export default function ProfileCol() {
                     src="assets/images/icon/home-outline-filled.svg" alt="" /><span>Feed </span></Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="my-profile-connections.html"> <img className="me-2 h-20px fa-fw"
-                    src="assets/images/icon/person-outline-filled.svg" alt="" /><span>Connections </span></a>
+                <Link className="nav-link" to="/my-profile-connections"> <img className="me-2 h-20px fa-fw"
+                    src="assets/images/icon/person-outline-filled.svg" alt="" /><span>Connections </span></Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="blog.html"> <img className="me-2 h-20px fa-fw"
-                    src="assets/images/icon/earth-outline-filled.svg" alt="" /><span>Latest News </span></a>
+                <Link className="nav-link" to="blog"> <img className="me-2 h-20px fa-fw"
+                    src="assets/images/icon/earth-outline-filled.svg" alt="" /><span>Latest News </span></Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="events.html"> <img className="me-2 h-20px fa-fw"
