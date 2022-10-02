@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function TinySlider() {
   return (
@@ -10,7 +11,7 @@ export default function TinySlider() {
             { /* <!-- Card add story START --> */ }
             <div className="card border border-2 border-dashed h-150px shadow-none d-flex align-items-center justify-content-center text-center">
               <div>
-                <a className="stretched-link btn btn-light rounded-circle icon-md" href="#!"><i className="fa-solid fa-plus"></i></a>
+                <Link className="stretched-link btn btn-light rounded-circle icon-md" to="#!"><i className="fa-solid fa-plus"></i></Link>
                 <h6 className="mt-2 mb-0 small">Post a Story</h6>
               </div>
             </div>
@@ -24,7 +25,7 @@ export default function TinySlider() {
               <div className="card-img-overlay d-flex align-items-center p-2">
                 <div className="w-100 mt-auto">
                   { /* <!-- Name --> */ }
-                  <a href="#!" className="stretched-link text-white small">Judy Nguyen</a>
+                  <Link to="#!" className="stretched-link text-white small">Judy Nguyen</Link>
                 </div>
               </div>
             </div>
@@ -38,7 +39,7 @@ export default function TinySlider() {
               <div className="card-img-overlay d-flex align-items-center p-2">
                 <div className="w-100 mt-auto">
                   { /* <!-- Name --> */ }
-                  <a href="#!" className="stretched-link text-white small">Samuel Bishop</a>
+                  <Link to="#!" className="stretched-link text-white small">Samuel Bishop</Link>
                 </div>
               </div>
             </div>
@@ -51,7 +52,7 @@ export default function TinySlider() {
               <div className="card-img-overlay d-flex align-items-center p-2">
                 <div className="w-100 mt-auto">
                   { /* <!-- Name --> */ }
-                  <a href="#!" className="stretched-link text-white small">Carolyn Ortiz</a>
+                  <Link to="#!" className="stretched-link text-white small">Carolyn Ortiz</Link>
                 </div>
               </div>
             </div>
@@ -64,7 +65,7 @@ export default function TinySlider() {
               <div className="card-img-overlay d-flex align-items-center p-2">
                 <div className="w-100 mt-auto">
                   { /* <!-- Name --> */ }
-                  <a href="#!" className="stretched-link text-white small">Amanda Reed</a>
+                  <Link to="#!" className="stretched-link text-white small">Amanda Reed</Link>
                 </div>
               </div>
             </div>
@@ -78,7 +79,7 @@ export default function TinySlider() {
               <div className="card-img-overlay d-flex align-items-center p-2">
                 <div className="w-100 mt-auto">
                   { /* <!-- Name --> */ }
-                  <a href="#!" className="stretched-link text-white small">Lori Stevens</a>
+                  <Link to="#!" className="stretched-link text-white small">Lori Stevens</Link>
                 </div>
               </div>
             </div>

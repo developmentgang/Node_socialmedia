@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function ProfileConnection() {
   return (
@@ -16,12 +17,12 @@ export default function ProfileConnection() {
               <div className="d-md-flex align-items-center mb-4">
                 { /*-<!-- Avatar --> */}
                 <div className="avatar me-3 mb-3 mb-md-0">
-                  <a href="#!"> <img className="avatar-img rounded-circle" src="assets/images/avatar/01.jpg" alt=""  /> </a>
+                  <Link to="#!"> <img className="avatar-img rounded-circle" src="assets/images/avatar/01.jpg" alt=""  /> </Link>
                 </div>
                 { /*-<!-- Info --> */}
                 <div className="w-100">
                   <div className="d-sm-flex align-items-start">
-                    <h6 className="mb-0"><a href="#!">Lori Ferguson </a></h6>
+                    <h6 className="mb-0"><Link to="#!">Lori Ferguson </Link></h6>
                     <p className="small ms-sm-2 mb-0">Full Stack Web Developer</p>
                 </div>
                 { /*-<!-- Connections START --> */}
@@ -58,12 +59,12 @@ export default function ProfileConnection() {
             <div className="d-md-flex align-items-center mb-4">
               { /*-<!-- Avatar --> */}
               <div className="avatar me-3 mb-3 mb-md-0">
-                <a href="#!"> <img className="avatar-img rounded-circle" src="assets/images/avatar/02.jpg" alt=""  /> </a>
+                <Link to="#!"> <img className="avatar-img rounded-circle" src="assets/images/avatar/02.jpg" alt=""  /> </Link>
               </div>
               { /*-<!-- Info --> */}
               <div className="w-100">
                 <div className="d-sm-flex align-items-start">
-                  <h6 className="mb-0"><a href="#!">Carolyn Ortiz </a></h6>
+                  <h6 className="mb-0"><Link to="#!">Carolyn Ortiz </Link></h6>
                   <p className="small ms-sm-2 mb-0">Web Developer | Freelancer</p>
                 </div>
                 { /*-<!-- Connections START --> */}
@@ -97,12 +98,12 @@ export default function ProfileConnection() {
             <div className="d-md-flex align-items-center mb-4">
               { /*-<!-- Avatar --> */}
               <div className="avatar me-3 mb-3 mb-md-0">
-                <a href="#!"> <img className="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt=""  /> </a>
+                <Link to="#!"> <img className="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt=""  /> </Link>
               </div>
               { /*-<!-- Info --> */}
               <div className="w-100">
                 <div className="d-sm-flex align-items-start">
-                  <h6 className="mb-0"><a href="#!">Lori Ferguson </a></h6>
+                  <h6 className="mb-0"><Link to="#!">Lori Ferguson </Link></h6>
                   <p className="small ms-sm-2 mb-0">Full Stack Web Developer</p>
                 </div>
                 { /*-<!-- Connections START --> */}
@@ -124,12 +125,12 @@ export default function ProfileConnection() {
             <div className="d-md-flex align-items-center mb-4">
               { /*-<!-- Avatar --> */}
               <div className="avatar me-3 mb-3 mb-md-0">
-                <a href="#!"> <img className="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt=""  /> </a>
+                <Link to="#!"> <img className="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt=""  /> </Link>
               </div>
               { /*-<!-- Info --> */}
               <div className="w-100">
                 <div className="d-sm-flex align-items-start">
-                  <h6 className="mb-0"><a href="#!">Lori Ferguson </a></h6>
+                  <h6 className="mb-0"><Link to="#!">Lori Ferguson </Link></h6>
                   <p className="small ms-sm-2 mb-0">Full Stack Web Developer</p>
               </div>
               { /*-<!-- Connections START --> */}
@@ -151,12 +152,12 @@ export default function ProfileConnection() {
           <div className="d-md-flex align-items-center mb-4">
             { /*-<!-- Avatar --> */}
             <div className="avatar me-3 mb-3 mb-md-0">
-              <a href="#!"> <img className="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt=""  /> </a>
+              <Link to="#!"> <img className="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt=""  /> </Link>
             </div>
             { /*-<!-- Info --> */}
             <div className="w-100">
               <div className="d-sm-flex align-items-start">
-                <h6 className="mb-0"><a href="#!">Lori Ferguson </a></h6>
+                <h6 className="mb-0"><Link to="#!">Lori Ferguson </Link></h6>
                 <p className="small ms-sm-2 mb-0">Full Stack Web Developer</p>
             </div>
             { /*-<!-- Connections START --> */}
@@ -175,14 +176,14 @@ export default function ProfileConnection() {
         </div>
         <div className="d-grid">
           { /*-<!-- Load more button START --> */}
-          <a href="#!" role="button" className="btn btn-sm btn-loader btn-primary-soft" data-bs-toggle="button" aria-pressed="true">
+          <Link to="#!" role="button" className="btn btn-sm btn-loader btn-primary-soft" data-bs-toggle="button" aria-pressed="true">
             <span className="load-text"> Load more connections </span>
             <div className="load-icon">
               <div className="spinner-grow spinner-grow-sm" role="status">
                 <span className="visually-hidden">Loading...</span>
               </div>
             </div>
-          </a>
+          </Link>
           { /*-<!-- Load more button END --> */}
         </div>
 

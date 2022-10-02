@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function ProfileActivity() {
   return (
@@ -47,7 +48,7 @@ export default function ProfileActivity() {
                 <div className="timeline-content">
                   <div className="d-sm-flex justify-content-between">
                     <div>
-                      <p className="small mb-0"><b>Billy Vasquez</b> save a <a href="#!">link.</a> </p>
+                      <p className="small mb-0"><b>Billy Vasquez</b> save a <Link to="#!">link.</Link> </p>
                       <p className="small mb-0"><i className="bi bi-lock-fill pe-1"></i>only me</p>
                     </div>
                     <p className="small ms-sm-3 mt-2 mt-sm-0">2min</p>
@@ -128,14 +129,14 @@ export default function ProfileActivity() {
           { /* <!-- Card footer START --> */ }
           <div className="card-footer border-0 py-3 text-center position-relative d-grid pt-0">
             { /* <!-- Load more button START --> */ }
-            <a href="#!" role="button" className="btn btn-sm btn-loader btn-primary-soft" data-bs-toggle="button" aria-pressed="true">
+            <Link to="#!" role="button" className="btn btn-sm btn-loader btn-primary-soft" data-bs-toggle="button" aria-pressed="true">
               <span className="load-text"> Load more activity </span>
               <div className="load-icon">
                 <div className="spinner-grow spinner-grow-sm" role="status">
                   <span className="visually-hidden">Loading...</span>
                 </div>
               </div>
-            </a>
+            </Link>
             { /* <!-- Load more button END --> */ }
           </div>
           { /* <!-- Card footer END --> */ }

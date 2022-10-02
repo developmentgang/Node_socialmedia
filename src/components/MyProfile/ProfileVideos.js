@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function ProfileVideos() {
   return (
@@ -20,10 +21,10 @@ export default function ProfileVideos() {
               { /* <!-- Add Video START --> */ }
               <div className="col-sm-6 col-md-4">
                 <div className="border border-2 py-5 border-dashed h-100 rounded text-center d-flex align-items-center justify-content-center position-relative">
-                  <a className="stretched-link" href="#!">
+                  <Link className="stretched-link" to="#!">
                     <i className="fa-solid fa-camera-retro fs-1"></i>
                     <h6 className="mt-2">Add Video</h6>
-                  </a>
+                  </Link>
                 </div>
               </div>
               { /* <!-- Add Video END --> */ }
@@ -36,7 +37,7 @@ export default function ProfileVideos() {
                     <img className="rounded" src="assets/images/albums/01.jpg" alt="" />
                     { /* <!-- Play icon --> */ }
                     <div className="position-absolute top-0 end-0 p-3">
-                      <a className="icon-md bg-danger text-white rounded-circle" data-glightbox href="assets/images/videos/video-call.mp4"> <i className="bi bi-play-fill fs-5"> </i> </a>
+                      <Link className="icon-md bg-danger text-white rounded-circle" data-glightbox to="assets/images/videos/video-call.mp4"> <i className="bi bi-play-fill fs-5"> </i> </Link>
                     </div>
                     { /* <!-- Duration --> */ }
                     <div className="position-absolute bottom-0 start-0 p-3 d-flex w-100">
@@ -47,10 +48,10 @@ export default function ProfileVideos() {
                   <div className="card-body px-0 pb-0 pt-2">
                     <ul className="nav nav-stack small">
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> <i className="bi bi-heart-fill text-danger pe-1"></i>22k </a>
+                        <Link className="nav-link" to="#!"> <i className="bi bi-heart-fill text-danger pe-1"></i>22k </Link>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> <i className="bi bi-chat-left-text-fill pe-1"></i>3k </a>
+                        <Link className="nav-link" to="#!"> <i className="bi bi-chat-left-text-fill pe-1"></i>3k </Link>
                       </li>
                     </ul>
                   </div>
@@ -66,7 +67,7 @@ export default function ProfileVideos() {
                     <img className="rounded" src="assets/images/albums/03.jpg" alt="" />
                     { /* <!-- Play icon --> */ }
                     <div className="position-absolute top-0 end-0 p-3">
-                      <a className="icon-md bg-danger text-white rounded-circle" data-glightbox href="assets/images/videos/video-call.mp4"> <i className="bi bi-play-fill fs-5"> </i> </a>
+                      <Link className="icon-md bg-danger text-white rounded-circle" data-glightbox to="assets/images/videos/video-call.mp4"> <i className="bi bi-play-fill fs-5"> </i> </Link>
                     </div>
                     { /* <!-- Duration --> */ }
                     <div className="position-absolute bottom-0 start-0 p-3 d-flex w-100">
@@ -77,10 +78,10 @@ export default function ProfileVideos() {
                   <div className="card-body px-0 pb-0 pt-2">
                     <ul className="nav nav-stack small">
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> <i className="bi bi-heart-fill text-danger pe-1"></i>232k </a>
+                        <Link className="nav-link" to="#!"> <i className="bi bi-heart-fill text-danger pe-1"></i>232k </Link>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> <i className="bi bi-chat-left-text-fill pe-1"></i>43k </a>
+                        <Link className="nav-link" to="#!"> <i className="bi bi-chat-left-text-fill pe-1"></i>43k </Link>
                       </li>
                     </ul>
                   </div>
@@ -96,7 +97,7 @@ export default function ProfileVideos() {
                     <img className="rounded" src="assets/images/albums/04.jpg" alt="" />
                     { /* <!-- Play icon --> */ }
                     <div className="position-absolute top-0 end-0 p-3">
-                      <a className="icon-md bg-danger text-white rounded-circle" data-glightbox href="assets/images/videos/video-call.mp4"> <i className="bi bi-play-fill fs-5"> </i> </a>
+                      <Link className="icon-md bg-danger text-white rounded-circle" data-glightbox to="assets/images/videos/video-call.mp4"> <i className="bi bi-play-fill fs-5"> </i> </Link>
                     </div>
                     { /* <!-- Duration --> */ }
                     <div className="position-absolute bottom-0 start-0 p-3 d-flex w-100">
@@ -107,10 +108,10 @@ export default function ProfileVideos() {
                   <div className="card-body px-0 pb-0 pt-2">
                     <ul className="nav nav-stack small">
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> <i className="bi bi-heart-fill text-danger pe-1"></i>10k </a>
+                        <Link className="nav-link" to="#!"> <i className="bi bi-heart-fill text-danger pe-1"></i>10k </Link>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> <i className="bi bi-chat-left-text-fill pe-1"></i>2k </a>
+                        <Link className="nav-link" to="#!"> <i className="bi bi-chat-left-text-fill pe-1"></i>2k </Link>
                       </li>
                     </ul>
                   </div>
@@ -126,7 +127,7 @@ export default function ProfileVideos() {
                     <img className="rounded" src="assets/images/albums/05.jpg" alt="" />
                     { /* <!-- Play icon --> */ }
                     <div className="position-absolute top-0 end-0 p-3">
-                      <a className="icon-md bg-danger text-white rounded-circle" data-glightbox href="assets/images/videos/video-call.mp4"> <i className="bi bi-play-fill fs-5"> </i> </a>
+                      <Link className="icon-md bg-danger text-white rounded-circle" data-glightbox to="assets/images/videos/video-call.mp4"> <i className="bi bi-play-fill fs-5"> </i> </Link>
                     </div>
                     { /* <!-- Duration --> */ }
                     <div className="position-absolute bottom-0 start-0 p-3 d-flex w-100">
@@ -137,10 +138,10 @@ export default function ProfileVideos() {
                   <div className="card-body px-0 pb-0 pt-2">
                     <ul className="nav nav-stack small">
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> <i className="bi bi-heart-fill text-danger pe-1"></i>56k </a>
+                        <Link className="nav-link" to="#!"> <i className="bi bi-heart-fill text-danger pe-1"></i>56k </Link>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> <i className="bi bi-chat-left-text-fill pe-1"></i>4k </a>
+                        <Link className="nav-link" to="#!"> <i className="bi bi-chat-left-text-fill pe-1"></i>4k </Link>
                       </li>
                     </ul>
                   </div>

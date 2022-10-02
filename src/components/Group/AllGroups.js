@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function AllGroups() {
   return (
@@ -23,7 +24,7 @@ export default function AllGroups() {
                 </div>
                   <div className="col-sm-6 col-lg-3">
                   { /* <!-- Button modal -->  */ }
-                  <a className="btn btn-primary-soft ms-auto w-100" href="#" data-bs-toggle="modal" data-bs-target="#modalCreateGroup"> <i className="fa-solid fa-plus pe-1"></i> Create group</a>
+                  <Link className="btn btn-primary-soft ms-auto w-100" to="#" data-bs-toggle="modal" data-bs-target="#modalCreateGroup"> <i className="fa-solid fa-plus pe-1"></i> Create group</Link>
                 </div>
               </div>
             </div>
@@ -32,10 +33,10 @@ export default function AllGroups() {
             <div className="card-body">
               { /* <!-- Tab nav line -->  */ }
               <ul className="nav nav-tabs nav-bottom-line justify-content-center justify-content-md-start">
-                <li className="nav-item"> <a className="nav-link active" data-bs-toggle="tab" href="#tab-1"> Friends' groups </a> </li>
-                <li className="nav-item"> <a className="nav-link" data-bs-toggle="tab" href="#tab-2"> Suggested for you </a> </li>
-                <li className="nav-item"> <a className="nav-link" data-bs-toggle="tab" href="#tab-3"> Popular near you </a> </li>
-                <li className="nav-item"> <a className="nav-link" data-bs-toggle="tab" href="#tab-4"> More suggestions </a> </li>
+                <li className="nav-item"> <Link className="nav-link active" data-bs-toggle="tab" to="#tab-1"> Friends' groups </Link> </li>
+                <li className="nav-item"> <Link className="nav-link" data-bs-toggle="tab" to="#tab-2"> Suggested for you </Link> </li>
+                <li className="nav-item"> <Link className="nav-link" data-bs-toggle="tab" to="#tab-3"> Popular near you </Link> </li>
+                <li className="nav-item"> <Link className="nav-link" data-bs-toggle="tab" to="#tab-4"> More suggestions </Link> </li>
               </ul>
               <div className="tab-content mb-0 pb-0">
 
@@ -50,10 +51,10 @@ export default function AllGroups() {
                           <div className="card-body text-center pt-0">
                             { /* <!-- Avatar -->  */ }
                             <div className="avatar avatar-lg mt-n5 mb-3">
-                               <a href="group-details.html"><img className="avatar-img rounded-circle border border-white border-3 bg-white" src="assets/images/logo/08.svg" alt="" /></a>
+                               <Link to="group-details"><img className="avatar-img rounded-circle border border-white border-3 bg-white" src="assets/images/logo/08.svg" alt="" /></Link>
                             </div>
                             { /* <!-- Info -->  */ }
-                            <h5 className="mb-0"> <a href="group-details.html">All in the Mind</a> </h5>
+                            <h5 className="mb-0"> <Link to="group-details">All in the Mind</Link> </h5>
                             <small> <i className="bi bi-lock pe-1"></i> Private Group</small>
                             { /* <!-- Group stat START -->  */ }
                             <div className="hstack gap-2 gap-xl-3 justify-content-center mt-3">
@@ -94,7 +95,7 @@ export default function AllGroups() {
                         { /* <!-- Card body END -->  */ }
                         { /* <!-- Card Footer START -->  */ }
                         <div className="card-footer text-center">
-                          <a className="btn btn-success-soft btn-sm" href="#!"> Join group </a>
+                          <Link className="btn btn-success-soft btn-sm" to="#!"> Join group </Link>
                         </div>
                         { /* <!-- Card Footer END -->  */ }
                       </div>
@@ -108,10 +109,10 @@ export default function AllGroups() {
                           <div className="card-body text-center pt-0">
                             { /* <!-- Avatar -->  */ }
                             <div className="avatar avatar-lg mt-n5 mb-3">
-                               <a href="group-details.html"><img className="avatar-img rounded-circle border border-white border-3 bg-white" src="assets/images/logo/02.svg" alt="" /></a>
+                               <Link to="group-details"><img className="avatar-img rounded-circle border border-white border-3 bg-white" src="assets/images/logo/02.svg" alt="" /></Link>
                             </div>
                             { /* <!-- Info -->  */ }
-                            <h5 className="mb-0"><a href="group-details.html">Beauty queens</a></h5>
+                            <h5 className="mb-0"><Link to="group-details">Beauty queens</Link></h5>
                             <small> <i className="bi bi-globe pe-1"></i> Public Group</small>
                             { /* <!-- Group stat START -->  */ }
                             <div className="hstack gap-2 gap-xl-3 justify-content-center mt-3">
@@ -149,7 +150,7 @@ export default function AllGroups() {
                         { /* <!-- Card body END -->  */ }
                         { /* <!-- Card Footer START -->  */ }
                         <div className="card-footer text-center">
-                          <a className="btn btn-success-soft btn-sm" href="#!"> Join group </a>
+                          <Link className="btn btn-success-soft btn-sm" to="#!"> Join group </Link>
                         </div>
                         { /* <!-- Card Footer END -->  */ }
                       </div>
@@ -163,10 +164,10 @@ export default function AllGroups() {
                           <div className="card-body text-center pt-0">
                             { /* <!-- Avatar -->  */ }
                             <div className="avatar avatar-lg mt-n5 mb-3">
-                               <a href="group-details.html"><img className="avatar-img rounded-circle border border-white border-3 bg-white" src="assets/images/logo/09.svg" alt="" /></a>
+                               <Link to="group-details"><img className="avatar-img rounded-circle border border-white border-3 bg-white" src="assets/images/logo/09.svg" alt="" /></Link>
                             </div>
                             { /* <!-- Info -->  */ }
-                            <h5 className="mb-0"> <a href="group-details.html">Eternal triangle</a></h5>
+                            <h5 className="mb-0"> <Link to="group-details">Eternal triangle</Link></h5>
                             <small> <i className="bi bi-globe pe-1"></i> Public Group</small>
                             { /* <!-- Group stat START -->  */ }
                             <div className="hstack gap-2 gap-xl-3 justify-content-center mt-3">
@@ -201,7 +202,7 @@ export default function AllGroups() {
                         { /* <!-- Card body END -->  */ }
                         { /* <!-- Card Footer START -->  */ }
                         <div className="card-footer text-center">
-                          <a className="btn btn-danger-soft btn-sm" href="#!"> Leave group </a>
+                          <Link className="btn btn-danger-soft btn-sm" to="#!"> Leave group </Link>
                         </div>
                         { /* <!-- Card Footer END -->  */ }
                       </div>
@@ -215,10 +216,10 @@ export default function AllGroups() {
                           <div className="card-body text-center pt-0">
                             { /* <!-- Avatar -->  */ }
                             <div className="avatar avatar-lg mt-n5 mb-3">
-                               <a href="group-details.html"><img className="avatar-img rounded-circle border border-white border-3 bg-white" src="assets/images/logo/10.svg" alt="" /></a>
+                               <Link to="group-details"><img className="avatar-img rounded-circle border border-white border-3 bg-white" src="assets/images/logo/10.svg" alt="" /></Link>
                             </div>
                             { /* <!-- Info -->  */ }
-                            <h5 className="mb-0"> <a href="group-details.html">Mountain movers</a></h5>
+                            <h5 className="mb-0"> <Link to="group-details">Mountain movers</Link></h5>
                             <small> <i className="bi bi-lock pe-1"></i> Private Group</small>
                             { /* <!-- Group stat START -->  */ }
                             <div className="hstack gap-2 gap-xl-3 justify-content-center mt-3">
@@ -262,7 +263,7 @@ export default function AllGroups() {
                           { /* <!-- Card body END -->  */ }
                           { /* <!-- Card Footer START -->  */ }
                           <div className="card-footer text-center">
-                            <a className="btn btn-danger-soft btn-sm" href="#!"> Leave group </a>
+                            <Link className="btn btn-danger-soft btn-sm" to="#!"> Leave group </Link>
                           </div>
                           { /* <!-- Card Footer END -->  */ }
                         </div>
@@ -276,10 +277,10 @@ export default function AllGroups() {
                             <div className="card-body text-center pt-0">
                               { /* <!-- Avatar -->  */ }
                               <div className="avatar avatar-lg mt-n5 mb-3">
-                                <a href="group-details.html"><img className="avatar-img rounded-circle border border-white border-3 bg-white" src="assets/images/logo/12.svg" alt="" /></a>
+                                <Link to="group-details"><img className="avatar-img rounded-circle border border-white border-3 bg-white" src="assets/images/logo/12.svg" alt="" /></Link>
                               </div>
                               { /* <!-- Info -->  */ }
-                              <h5 className="mb-0"> <a href="group-details.html">Hard workers</a></h5>
+                              <h5 className="mb-0"> <Link to="group-details">Hard workers</Link></h5>
                               <small> <i className="bi bi-lock pe-1"></i> Private Group</small>
                               { /* <!-- Group stat START -->  */ }
                               <div className="hstack gap-2 gap-xl-3 justify-content-center mt-3">
@@ -320,7 +321,7 @@ export default function AllGroups() {
                           { /* <!-- Card body END -->  */ }
                           { /* <!-- Card Footer START -->  */ }
                           <div className="card-footer text-center">
-                            <a className="btn btn-success-soft btn-sm" href="#!"> Join group </a>
+                            <Link className="btn btn-success-soft btn-sm" to="#!"> Join group </Link>
                           </div>
                           { /* <!-- Card Footer END -->  */ }
                         </div>
@@ -341,10 +342,10 @@ export default function AllGroups() {
                           <div className="card-body text-center pt-0">
                             { /* <!-- Avatar -->  */ }
                             <div className="avatar avatar-lg mt-n5 mb-3">
-                               <a href="group-details.html"><img className="avatar-img rounded-circle border border-white border-3 bg-white" src="assets/images/logo/01.svg" alt="" /></a>
+                               <Link to="group-details"><img className="avatar-img rounded-circle border border-white border-3 bg-white" src="assets/images/logo/01.svg" alt="" /></Link>
                             </div>
                             { /* <!-- Info -->  */ }
-                            <h5 className="mb-0"><a href="group-details.html">Real humans</a></h5>
+                            <h5 className="mb-0"><Link to="group-details">Real humans</Link></h5>
                             <small> <i className="bi bi-globe pe-1"></i> Public Group</small>
                             { /* <!-- Group stat START -->  */ }
                             <div className="hstack gap-2 gap-xl-3 justify-content-center mt-3">
@@ -382,7 +383,7 @@ export default function AllGroups() {
                         { /* <!-- Card body END -->  */ }
                         { /* <!-- Card Footer START -->  */ }
                         <div className="card-footer text-center">
-                          <a className="btn btn-danger-soft btn-sm" href="#!"> Leave group </a>
+                          <Link className="btn btn-danger-soft btn-sm" to="#!"> Leave group </Link>
                         </div>
                         { /* <!-- Card Footer END -->  */ }
                       </div>
@@ -396,10 +397,10 @@ export default function AllGroups() {
                           <div className="card-body text-center pt-0">
                             { /* <!-- Avatar -->  */ }
                             <div className="avatar avatar-lg mt-n5 mb-3">
-                               <a href="group-details.html"><img className="avatar-img rounded-circle border border-white border-3 bg-white" src="assets/images/logo/03.svg" alt="" /></a>
+                               <Link to="group-details"><img className="avatar-img rounded-circle border border-white border-3 bg-white" src="assets/images/logo/03.svg" alt="" /></Link>
                             </div>
                             { /* <!-- Info -->  */ }
-                            <h5 className="mb-0"><a href="group-details.html">Strong signals</a></h5>
+                            <h5 className="mb-0"><Link to="group-details">Strong signals</Link></h5>
                             <small> <i className="bi bi-lock pe-1"></i> Private Group</small>
                             { /* <!-- Group stat START -->  */ }
                             <div className="hstack gap-2 gap-xl-3 justify-content-center mt-3">
@@ -434,7 +435,7 @@ export default function AllGroups() {
                         { /* <!-- Card body END -->  */ }
                         { /* <!-- Card Footer START -->  */ }
                         <div className="card-footer text-center">
-                          <a className="btn btn-success-soft btn-sm" href="#!"> Join group </a>
+                          <Link className="btn btn-success-soft btn-sm" to="#!"> Join group </Link>
                         </div>
                         { /* <!-- Card Footer END -->  */ }
                       </div>
@@ -448,10 +449,10 @@ export default function AllGroups() {
                           <div className="card-body text-center pt-0">
                             { /* <!-- Avatar -->  */ }
                             <div className="avatar avatar-lg mt-n5 mb-3">
-                               <a href="group-details.html"><img className="avatar-img rounded-circle border border-white border-3 bg-white" src="assets/images/logo/05.svg" alt="" /></a>
+                               <Link to="group-details"><img className="avatar-img rounded-circle border border-white border-3 bg-white" src="assets/images/logo/05.svg" alt="" /></Link>
                             </div>
                             { /* <!-- Info -->  */ }
-                            <h5 className="mb-0"><a href="group-details.html">Team yes, we can</a></h5>
+                            <h5 className="mb-0"><Link to="group-details">Team yes, we can</Link></h5>
                             <small> <i className="bi bi-lock pe-1"></i> Private Group</small>
                             { /* <!-- Group stat START -->  */ }
                             <div className="hstack gap-2 gap-xl-3 justify-content-center mt-3">
@@ -495,7 +496,7 @@ export default function AllGroups() {
                         { /* <!-- Card body END -->  */ }
                         { /* <!-- Card Footer START -->  */ }
                         <div className="card-footer text-center">
-                          <a className="btn btn-success-soft btn-sm" href="#!"> Join group </a>
+                          <Link className="btn btn-success-soft btn-sm" to="#!"> Join group </Link>
                         </div>
                         { /* <!-- Card Footer END -->  */ }
                       </div>

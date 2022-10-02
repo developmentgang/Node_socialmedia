@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function ProfileMedia() {
   return (
@@ -9,7 +10,7 @@ export default function ProfileMedia() {
               <div className="card-header d-sm-flex align-items-center justify-content-between border-0 pb-0">
                 <h5 className="card-title">Photos</h5>
                 { /* <!-- Button modal --> */ }
-                <a className="btn btn-sm btn-primary-soft" href="#" data-bs-toggle="modal" data-bs-target="#modalCreateAlbum"> <i className="fa-solid fa-plus pe-1"></i> Create album</a>
+                <Link className="btn btn-sm btn-primary-soft" to="#" data-bs-toggle="modal" data-bs-target="#modalCreateAlbum"> <i className="fa-solid fa-plus pe-1"></i> Create album</Link>
               </div>
               { /* <!-- Card header END --> */ }
               { /* <!-- Card body START --> */ }
@@ -20,10 +21,10 @@ export default function ProfileMedia() {
                   { /* <!-- Add photo START --> */ }
                   <div className="col-sm-6 col-md-4 col-lg-3">
                     <div className="border border-2 py-5 border-dashed h-100 rounded text-center d-flex align-items-center justify-content-center position-relative">
-                      <a className="stretched-link" href="#!">
+                      <Link className="stretched-link" to="#!">
                         <i className="fa-solid fa-camera-retro fs-1"></i>
                         <h6 className="mt-2">Add photo</h6>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   { /* <!-- Add photo END --> */ }
@@ -31,16 +32,16 @@ export default function ProfileMedia() {
                   { /* <!-- Photo item START --> */ }
                   <div className="col-sm-6 col-md-4 col-lg-3">
                     { /* <!-- Photo --> */ }
-                    <a href="assets/images/albums/01.jpg" data-gallery="image-popup" data-glightbox="description: .custom-desc2; descPosition: left;">
+                    <Link to="assets/images/albums/01.jpg" data-gallery="image-popup" data-glightbox="description: .custom-desc2; descPosition: left;">
                       <img className="rounded img-fluid" src="assets/images/albums/01.jpg" alt="" />
-                    </a>
+                    </Link>
                   { /* <!-- likes --> */ }
                     <ul className="nav nav-stack py-2 small">
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> <i className="bi bi-heart-fill text-danger pe-1"></i>22k </a>
+                        <Link className="nav-link" to="#!"> <i className="bi bi-heart-fill text-danger pe-1"></i>22k </Link>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> <i className="bi bi-chat-left-text-fill pe-1"></i>3k </a>
+                        <Link className="nav-link" to="#!"> <i className="bi bi-chat-left-text-fill pe-1"></i>3k </Link>
                       </li>
                     </ul>
                     { /* <!-- glightbox Albums left bar START --> */ }
@@ -62,42 +63,42 @@ export default function ProfileMedia() {
                         </div>
                         { /* <!-- Card feed action dropdown START --> */ }
                         <div className="dropdown">
-                          <a href="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                          <Link to="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
                             <i className="bi bi-three-dots"></i>
-                          </a>
+                          </Link>
                           { /* <!-- Card feed action dropdown menu --> */ }
                           <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction">
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</Link></li>
                             <li><hr className="dropdown-divider" /></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</Link></li>
                           </ul>
                         </div>
                         { /* <!-- Card feed action dropdown END --> */ }
                       </div>
-                      <p className="mt-3 mb-0">I'm so privileged to be involved in the @bootstrap hiring process! <a href="#">#internship #inclusivebusiness</a> <a href="#">#internship</a> <a href="#"> #hiring</a> <a href="#">#apply</a> </p>
+                      <p className="mt-3 mb-0">I'm so privileged to be involved in the @bootstrap hiring process! <Link to="#">#internship #inclusivebusiness</Link> <Link to="#">#internship</Link> <Link to="#"> #hiring</Link> <Link to="#">#apply</Link> </p>
                       <ul className="nav nav-stack py-3 small">
                         <li className="nav-item">
-                          <a className="nav-link active" href="#!"> <i className="bi bi-hand-thumbs-up-fill pe-1"></i>Liked (56)</a>
+                          <Link className="nav-link active" to="#!"> <i className="bi bi-hand-thumbs-up-fill pe-1"></i>Liked (56)</Link>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</a>
+                          <Link className="nav-link" to="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</Link>
                         </li>
                         { /* <!-- Card share action START --> */ }
                         <li className="nav-item dropdown ms-auto">
-                          <a className="nav-link mb-0" href="#" id="cardShareAction" data-bs-toggle="dropdown" aria-expanded="false">
+                          <Link className="nav-link mb-0" to="#" id="cardShareAction" data-bs-toggle="dropdown" aria-expanded="false">
                             <i className="bi bi-reply-fill fa-flip-horizontal pe-1"></i>Share (3)
-                          </a>
+                          </Link>
                           { /* <!-- Card share action dropdown menu --> */ }
                           <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction">
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</Link></li>
                             <li><hr className="dropdown-divider" /></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</Link></li>
                           </ul>
                         </li>
                         { /* <!-- Card share action END --> */ }
@@ -131,7 +132,7 @@ export default function ProfileMedia() {
                               <div className="bg-light rounded-start-top-0 p-3 rounded">
                                 <div className="d-flex justify-content-center">
                                   <div className="me-2">
-                                    <h6 className="mb-1"> <a href="#!"> Frances Guerrero </a></h6>
+                                    <h6 className="mb-1"> <Link to="#!"> Frances Guerrero </Link></h6>
                                     <p className="small mb-0">Removed demands expense account in outward tedious do.</p>
                                   </div>
                                   <small>5hr</small>
@@ -140,13 +141,13 @@ export default function ProfileMedia() {
                               { /* <!-- Comment react --> */ }
                               <ul className="nav nav-divider py-2 small">
                                 <li className="nav-item">
-                                  <a className="nav-link" href="#!"> Like (3)</a>
+                                  <Link className="nav-link" to="#!"> Like (3)</Link>
                                 </li>
                                 <li className="nav-item">
-                                  <a className="nav-link" href="#!"> Reply</a>
+                                  <Link className="nav-link" to="#!"> Reply</Link>
                                 </li>
                                 <li className="nav-item">
-                                  <a className="nav-link" href="#!"> View 5 replies</a>
+                                  <Link className="nav-link" to="#!"> View 5 replies</Link>
                                 </li>
                               </ul>
                             </div>
@@ -162,16 +163,16 @@ export default function ProfileMedia() {
                   { /* <!-- Photo item START --> */ }
                   <div className="col-sm-6 col-md-4 col-lg-3 position-relative">
                     { /* <!-- Photo --> */ }
-                    <a href="assets/images/albums/02.jpg" data-gallery="image-popup" data-glightbox="description: .custom-desc2; descPosition: left;">
+                    <Link to="assets/images/albums/02.jpg" data-gallery="image-popup" data-glightbox="description: .custom-desc2; descPosition: left;">
                       <img className="rounded img-fluid" src="assets/images/albums/02.jpg" alt="" />
-                    </a>
+                    </Link>
                     { /* <!-- likes --> */ }
                     <ul className="nav nav-stack py-2 small">
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> <i className="bi bi-heart-fill text-danger pe-1"></i>32k </a>
+                        <Link className="nav-link" to="#!"> <i className="bi bi-heart-fill text-danger pe-1"></i>32k </Link>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> <i className="bi bi-chat-left-text-fill pe-1"></i>12k </a>
+                        <Link className="nav-link" to="#!"> <i className="bi bi-chat-left-text-fill pe-1"></i>12k </Link>
                       </li>
                     </ul>
                     { /* <!-- glightbox Albums left bar START --> */ }
@@ -193,42 +194,42 @@ export default function ProfileMedia() {
                         </div>
                         { /* <!-- Card feed action dropdown START --> */ }
                         <div className="dropdown">
-                          <a href="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardFeedAction2" data-bs-toggle="dropdown" aria-expanded="false">
+                          <Link to="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardFeedAction2" data-bs-toggle="dropdown" aria-expanded="false">
                             <i className="bi bi-three-dots"></i>
-                          </a>
+                          </Link>
                           { /* <!-- Card feed action dropdown menu --> */ }
                           <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction2">
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</Link></li>
                             <li><hr className="dropdown-divider" /></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</Link></li>
                           </ul>
                         </div>
                         { /* <!-- Card feed action dropdown END --> */ }
                       </div>
-                      <p className="mt-3 mb-0">I'm so privileged to be involved in the @bootstrap hiring process! <a href="#">#internship #inclusivebusiness</a> <a href="#">#internship</a> <a href="#"> #hiring</a> <a href="#">#apply</a> </p>
+                      <p className="mt-3 mb-0">I'm so privileged to be involved in the @bootstrap hiring process! <Link to="#">#internship #inclusivebusiness</Link> <Link to="#">#internship</Link> <Link to="#"> #hiring</Link> <Link to="#">#apply</Link> </p>
                       <ul className="nav nav-stack py-3 small">
                         <li className="nav-item">
-                          <a className="nav-link active" href="#!"> <i className="bi bi-hand-thumbs-up-fill pe-1"></i>Liked (56)</a>
+                          <Link className="nav-link active" to="#!"> <i className="bi bi-hand-thumbs-up-fill pe-1"></i>Liked (56)</Link>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</a>
+                          <Link className="nav-link" to="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</Link>
                         </li>
                         { /* <!-- Card share action START --> */ }
                         <li className="nav-item dropdown ms-auto">
-                          <a className="nav-link mb-0" href="#" id="cardShareAction2" data-bs-toggle="dropdown" aria-expanded="false">
+                          <Link className="nav-link mb-0" to="#" id="cardShareAction2" data-bs-toggle="dropdown" aria-expanded="false">
                             <i className="bi bi-reply-fill fa-flip-horizontal pe-1"></i>Share (3)
-                          </a>
+                          </Link>
                           { /* <!-- Card share action dropdown menu --> */ }
                           <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction2">
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</Link></li>
                             <li><hr className="dropdown-divider" /></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</Link></li>
                           </ul>
                         </li>
                         { /* <!-- Card share action END --> */ }
@@ -258,7 +259,7 @@ export default function ProfileMedia() {
                               <div className="bg-light rounded-start-top-0 p-3 rounded">
                                 <div className="d-flex justify-content-center">
                                   <div className="me-2">
-                                    <h6 className="mb-1"> <a href="#!"> Frances Guerrero </a></h6>
+                                    <h6 className="mb-1"> <Link to="#!"> Frances Guerrero </Link></h6>
                                     <p className="small mb-0">Removed demands expense account in outward tedious do.</p>
                                   </div>
                                   <small>5hr</small>
@@ -267,13 +268,13 @@ export default function ProfileMedia() {
                               { /* <!-- Comment react --> */ }
                               <ul className="nav nav-divider py-2 small">
                                 <li className="nav-item">
-                                  <a className="nav-link" href="#!"> Like (3)</a>
+                                  <Link className="nav-link" to="#!"> Like (3)</Link>
                                 </li>
                                 <li className="nav-item">
-                                  <a className="nav-link" href="#!"> Reply</a>
+                                  <Link className="nav-link" to="#!"> Reply</Link>
                                 </li>
                                 <li className="nav-item">
-                                  <a className="nav-link" href="#!"> View 5 replies</a>
+                                  <Link className="nav-link" to="#!"> View 5 replies</Link>
                                 </li>
                               </ul>
                             </div>
@@ -289,16 +290,16 @@ export default function ProfileMedia() {
                   { /* <!-- Photo item START --> */ }
                   <div className="col-sm-6 col-md-4 col-lg-3">
                     { /* <!-- PHoto --> */ }
-                    <a href="assets/images/albums/03.jpg" data-gallery="image-popup" data-glightbox="description: .custom-desc2; descPosition: left;">
+                    <Link to="assets/images/albums/03.jpg" data-gallery="image-popup" data-glightbox="description: .custom-desc2; descPosition: left;">
                       <img className="rounded img-fluid" src="assets/images/albums/03.jpg" alt="" />
-                    </a>
+                    </Link>
                     { /* <!-- likes --> */ }
                     <ul className="nav nav-stack py-2 small">
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> <i className="bi bi-heart-fill text-danger pe-1"></i>21k </a>
+                        <Link className="nav-link" to="#!"> <i className="bi bi-heart-fill text-danger pe-1"></i>21k </Link>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> <i className="bi bi-chat-left-text-fill pe-1"></i>4k </a>
+                        <Link className="nav-link" to="#!"> <i className="bi bi-chat-left-text-fill pe-1"></i>4k </Link>
                       </li>
                     </ul>
                     { /* <!-- glightbox Albums left bar START --> */ }
@@ -320,42 +321,42 @@ export default function ProfileMedia() {
                         </div>
                         { /* <!-- Card feed action dropdown START --> */ }
                         <div className="dropdown">
-                          <a href="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardFeedAction3" data-bs-toggle="dropdown" aria-expanded="false">
+                          <Link to="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardFeedAction3" data-bs-toggle="dropdown" aria-expanded="false">
                             <i className="bi bi-three-dots"></i>
-                          </a>
+                          </Link>
                           { /* <!-- Card feed action dropdown menu --> */ }
                           <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction3">
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</Link></li>
                             <li><hr className="dropdown-divider" /></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</Link></li>
                           </ul>
                         </div>
                         { /* <!-- Card feed action dropdown END --> */ }
                       </div>
-                      <p className="mt-3 mb-0">I'm so privileged to be involved in the @bootstrap hiring process! <a href="#">#internship #inclusivebusiness</a> <a href="#">#internship</a> <a href="#"> #hiring</a> <a href="#">#apply</a> </p>
+                      <p className="mt-3 mb-0">I'm so privileged to be involved in the @bootstrap hiring process! <Link to="#">#internship #inclusivebusiness</Link> <Link to="#">#internship</Link> <Link to="#"> #hiring</Link> <Link to="#">#apply</Link> </p>
                       <ul className="nav nav-stack py-3 small">
                         <li className="nav-item">
-                          <a className="nav-link active" href="#!"> <i className="bi bi-hand-thumbs-up-fill pe-1"></i>Liked (56)</a>
+                          <Link className="nav-link active" to="#!"> <i className="bi bi-hand-thumbs-up-fill pe-1"></i>Liked (56)</Link>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</a>
+                          <Link className="nav-link" to="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</Link>
                         </li>
                         { /* <!-- Card share action START --> */ }
                         <li className="nav-item dropdown ms-auto">
-                          <a className="nav-link mb-0" href="#" id="cardShareAction3" data-bs-toggle="dropdown" aria-expanded="false">
+                          <Link className="nav-link mb-0" to="#" id="cardShareAction3" data-bs-toggle="dropdown" aria-expanded="false">
                             <i className="bi bi-reply-fill fa-flip-horizontal pe-1"></i>Share (3)
-                          </a>
+                          </Link>
                           { /* <!-- Card share action dropdown menu --> */ }
                           <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction3">
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</Link></li>
                             <li><hr className="dropdown-divider" /></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</Link></li>
                           </ul>
                         </li>
                         { /* <!-- Card share action END --> */ }
@@ -385,7 +386,7 @@ export default function ProfileMedia() {
                               <div className="bg-light rounded-start-top-0 p-3 rounded">
                                 <div className="d-flex justify-content-center">
                                   <div className="me-2">
-                                    <h6 className="mb-1"> <a href="#!"> Frances Guerrero </a></h6>
+                                    <h6 className="mb-1"> <Link to="#!"> Frances Guerrero </Link></h6>
                                     <p className="small mb-0">Removed demands expense account in outward tedious do.</p>
                                   </div>
                                   <small>5hr</small>
@@ -394,13 +395,13 @@ export default function ProfileMedia() {
                               { /* <!-- Comment react --> */ }
                               <ul className="nav nav-divider py-2 small">
                                 <li className="nav-item">
-                                  <a className="nav-link" href="#!"> Like (3)</a>
+                                  <Link className="nav-link" to="#!"> Like (3)</Link>
                                 </li>
                                 <li className="nav-item">
-                                  <a className="nav-link" href="#!"> Reply</a>
+                                  <Link className="nav-link" to="#!"> Reply</Link>
                                 </li>
                                 <li className="nav-item">
-                                  <a className="nav-link" href="#!"> View 5 replies</a>
+                                  <Link className="nav-link" to="#!"> View 5 replies</Link>
                                 </li>
                               </ul>
                             </div>
@@ -416,16 +417,16 @@ export default function ProfileMedia() {
                   { /* <!-- Photo item START --> */ }
                   <div className="col-sm-6 col-md-4 col-lg-3">
                     { /* <!-- Photo --> */ }
-                    <a href="assets/images/albums/04.jpg" data-gallery="image-popup" data-glightbox="description: .custom-desc2; descPosition: left;">
+                    <Link to="assets/images/albums/04.jpg" data-gallery="image-popup" data-glightbox="description: .custom-desc2; descPosition: left;">
                       <img className="rounded img-fluid" src="assets/images/albums/04.jpg" alt="" />
-                    </a>
+                    </Link>
                     { /* <!-- likes --> */ }
                     <ul className="nav nav-stack py-2 small">
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> <i className="bi bi-heart-fill text-danger pe-1"></i>32k </a>
+                        <Link className="nav-link" to="#!"> <i className="bi bi-heart-fill text-danger pe-1"></i>32k </Link>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> <i className="bi bi-chat-left-text-fill pe-1"></i>16k </a>
+                        <Link className="nav-link" to="#!"> <i className="bi bi-chat-left-text-fill pe-1"></i>16k </Link>
                       </li>
                     </ul>
                     { /* <!-- glightbox Albums left bar START --> */ }
@@ -447,43 +448,43 @@ export default function ProfileMedia() {
                         </div>
                         { /* <!-- Card feed action dropdown START --> */ }
                         <div className="dropdown">
-                          <a href="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardFeedAction4" data-bs-toggle="dropdown" aria-expanded="false">
+                          <Link to="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardFeedAction4" data-bs-toggle="dropdown" aria-expanded="false">
                             <i className="bi bi-three-dots"></i>
-                          </a>
+                          </Link>
                           { /* <!-- Card feed action dropdown menu --> */ }
                           <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction4">
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</Link></li>
                             <li><hr className="dropdown-divider" /></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</Link></li>
                           </ul>
                         </div>
                         { /* <!-- Card feed action dropdown END --> */ }
                       </div>
-                      <p className="mt-3 mb-0">I'm so privileged to be involved in the @bootstrap hiring process! <a href="#">#internship #inclusivebusiness</a> <a href="#">#internship</a> <a href="#"> #hiring</a> <a href="#">#apply</a> </p>
+                      <p className="mt-3 mb-0">I'm so privileged to be involved in the @bootstrap hiring process! <Link to="#">#internship #inclusivebusiness</Link> <Link to="#">#internship</Link> <Link to="#"> #hiring</Link> <Link to="#">#apply</Link> </p>
                       { /* <!-- likes --> */ }
                       <ul className="nav nav-stack py-3 small">
                         <li className="nav-item">
-                          <a className="nav-link active" href="#!"> <i className="bi bi-hand-thumbs-up-fill pe-1"></i>Liked (56)</a>
+                          <Link className="nav-link active" to="#!"> <i className="bi bi-hand-thumbs-up-fill pe-1"></i>Liked (56)</Link>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</a>
+                          <Link className="nav-link" to="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</Link>
                         </li>
                         { /* <!-- Card share action START --> */ }
                         <li className="nav-item dropdown ms-auto">
-                          <a className="nav-link mb-0" href="#" id="cardShareAction4" data-bs-toggle="dropdown" aria-expanded="false">
+                          <Link className="nav-link mb-0" to="#" id="cardShareAction4" data-bs-toggle="dropdown" aria-expanded="false">
                             <i className="bi bi-reply-fill fa-flip-horizontal pe-1"></i>Share (3)
-                          </a>
+                          </Link>
                           { /* <!-- Card share action dropdown menu --> */ }
                           <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction4">
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</Link></li>
                             <li><hr className="dropdown-divider" /></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</Link></li>
                           </ul>
                         </li>
                         { /* <!-- Card share action END --> */ }
@@ -513,7 +514,7 @@ export default function ProfileMedia() {
                               <div className="bg-light rounded-start-top-0 p-3 rounded">
                                 <div className="d-flex justify-content-center">
                                   <div className="me-2">
-                                    <h6 className="mb-1"> <a href="#!"> Frances Guerrero </a></h6>
+                                    <h6 className="mb-1"> <Link to="#!"> Frances Guerrero </Link></h6>
                                     <p className="small mb-0">Removed demands expense account in outward tedious do.</p>
                                   </div>
                                   <small>5hr</small>
@@ -522,13 +523,13 @@ export default function ProfileMedia() {
                               { /* <!-- Comment react --> */ }
                               <ul className="nav nav-divider py-2 small">
                                 <li className="nav-item">
-                                  <a className="nav-link" href="#!"> Like (3)</a>
+                                  <Link className="nav-link" to="#!"> Like (3)</Link>
                                 </li>
                                 <li className="nav-item">
-                                  <a className="nav-link" href="#!"> Reply</a>
+                                  <Link className="nav-link" to="#!"> Reply</Link>
                                 </li>
                                 <li className="nav-item">
-                                  <a className="nav-link" href="#!"> View 5 replies</a>
+                                  <Link className="nav-link" to="#!"> View 5 replies</Link>
                                 </li>
                               </ul>
                             </div>
@@ -544,16 +545,16 @@ export default function ProfileMedia() {
                   { /* <!-- Photo item START --> */ }
                   <div className="col-sm-6 col-md-4 col-lg-3">
                     { /* <!-- Photo --> */ }
-                    <a href="assets/images/albums/05.jpg" data-gallery="image-popup" data-glightbox="description: .custom-desc2; descPosition: left;">
+                    <Link to="assets/images/albums/05.jpg" data-gallery="image-popup" data-glightbox="description: .custom-desc2; descPosition: left;">
                       <img className="rounded img-fluid" src="assets/images/albums/05.jpg" alt="" />
-                    </a>
+                    </Link>
                     { /* <!-- likes --> */ }
                     <ul className="nav nav-stack py-2 small">
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> <i className="bi bi-heart-fill text-danger pe-1"></i>20k </a>
+                        <Link className="nav-link" to="#!"> <i className="bi bi-heart-fill text-danger pe-1"></i>20k </Link>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> <i className="bi bi-chat-left-text-fill pe-1"></i>8k </a>
+                        <Link className="nav-link" to="#!"> <i className="bi bi-chat-left-text-fill pe-1"></i>8k </Link>
                       </li>
                     </ul>
                     { /* <!-- glightbox Albums left bar START --> */ }
@@ -575,42 +576,42 @@ export default function ProfileMedia() {
                         </div>
                         { /* <!-- Card feed action dropdown START --> */ }
                         <div className="dropdown">
-                          <a href="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardFeedAction5" data-bs-toggle="dropdown" aria-expanded="false">
+                          <Link to="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardFeedAction5" data-bs-toggle="dropdown" aria-expanded="false">
                             <i className="bi bi-three-dots"></i>
-                          </a>
+                          </Link>
                           { /* <!-- Card feed action dropdown menu --> */ }
                           <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction5">
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</Link></li>
                             <li><hr className="dropdown-divider" /></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</Link></li>
                           </ul>
                         </div>
                         { /* <!-- Card feed action dropdown END --> */ }
                       </div>
-                      <p className="mt-3 mb-0">I'm so privileged to be involved in the @bootstrap hiring process! <a href="#">#internship #inclusivebusiness</a> <a href="#">#internship</a> <a href="#"> #hiring</a> <a href="#">#apply</a> </p>
+                      <p className="mt-3 mb-0">I'm so privileged to be involved in the @bootstrap hiring process! <Link to="#">#internship #inclusivebusiness</Link> <Link to="#">#internship</Link> <Link to="#"> #hiring</Link> <Link to="#">#apply</Link> </p>
                       <ul className="nav nav-stack py-3 small">
                         <li className="nav-item">
-                          <a className="nav-link active" href="#!"> <i className="bi bi-hand-thumbs-up-fill pe-1"></i>Liked (56)</a>
+                          <Link className="nav-link active" to="#!"> <i className="bi bi-hand-thumbs-up-fill pe-1"></i>Liked (56)</Link>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</a>
+                          <Link className="nav-link" to="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</Link>
                         </li>
                         { /* <!-- Card share action START --> */ }
                         <li className="nav-item dropdown ms-auto">
-                          <a className="nav-link mb-0" href="#" id="cardShareAction5" data-bs-toggle="dropdown" aria-expanded="false">
+                          <Link className="nav-link mb-0" to="#" id="cardShareAction5" data-bs-toggle="dropdown" aria-expanded="false">
                             <i className="bi bi-reply-fill fa-flip-horizontal pe-1"></i>Share (3)
-                          </a>
+                          </Link>
                           { /* <!-- Card share action dropdown menu --> */ }
                           <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction5">
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</Link></li>
                             <li><hr className="dropdown-divider" /></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</Link></li>
                           </ul>
                         </li>
                         { /* <!-- Card share action END --> */ }
@@ -640,7 +641,7 @@ export default function ProfileMedia() {
                               <div className="bg-light rounded-start-top-0 p-3 rounded">
                                 <div className="d-flex justify-content-center">
                                   <div className="me-2">
-                                    <h6 className="mb-1"> <a href="#!"> Frances Guerrero </a></h6>
+                                    <h6 className="mb-1"> <Link to="#!"> Frances Guerrero </Link></h6>
                                     <p className="small mb-0">Removed demands expense account in outward tedious do.</p>
                                   </div>
                                   <small>5hr</small>
@@ -649,13 +650,13 @@ export default function ProfileMedia() {
                               { /* <!-- Comment react --> */ }
                               <ul className="nav nav-divider py-2 small">
                                 <li className="nav-item">
-                                  <a className="nav-link" href="#!"> Like (3)</a>
+                                  <Link className="nav-link" to="#!"> Like (3)</Link>
                                 </li>
                                 <li className="nav-item">
-                                  <a className="nav-link" href="#!"> Reply</a>
+                                  <Link className="nav-link" to="#!"> Reply</Link>
                                 </li>
                                 <li className="nav-item">
-                                  <a className="nav-link" href="#!"> View 5 replies</a>
+                                  <Link className="nav-link" to="#!"> View 5 replies</Link>
                                 </li>
                               </ul>
                             </div>
@@ -671,16 +672,16 @@ export default function ProfileMedia() {
                   { /* <!-- Photo item START --> */ }
                   <div className="col-sm-6 col-md-4 col-lg-3">
                     { /* <!-- Photo --> */ }
-                    <a href="assets/images/albums/06.jpg" data-gallery="image-popup" data-glightbox="description: .custom-desc2; descPosition: left;">
+                    <Link to="assets/images/albums/06.jpg" data-gallery="image-popup" data-glightbox="description: .custom-desc2; descPosition: left;">
                       <img className="rounded img-fluid" src="assets/images/albums/06.jpg" alt="" />
-                    </a>
+                    </Link>
                     { /* <!-- likes --> */ }
                     <ul className="nav nav-stack py-2 small">
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> <i className="bi bi-heart-fill text-danger pe-1"></i>56k </a>
+                        <Link className="nav-link" to="#!"> <i className="bi bi-heart-fill text-danger pe-1"></i>56k </Link>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> <i className="bi bi-chat-left-text-fill pe-1"></i>12k </a>
+                        <Link className="nav-link" to="#!"> <i className="bi bi-chat-left-text-fill pe-1"></i>12k </Link>
                       </li>
                     </ul>
                     { /* <!-- glightbox Albums left bar START --> */ }
@@ -702,43 +703,43 @@ export default function ProfileMedia() {
                         </div>
                         { /* <!-- Card feed action dropdown START --> */ }
                         <div className="dropdown">
-                          <a href="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardFeedAction6" data-bs-toggle="dropdown" aria-expanded="false">
+                          <Link to="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardFeedAction6" data-bs-toggle="dropdown" aria-expanded="false">
                             <i className="bi bi-three-dots"></i>
-                          </a>
+                          </Link>
                           { /* <!-- Card feed action dropdown menu --> */ }
                           <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction6">
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</Link></li>
                             <li><hr className="dropdown-divider" /></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</Link></li>
                           </ul>
                         </div>
                         { /* <!-- Card feed action dropdown END --> */ }
                       </div>
-                      <p className="mt-3 mb-0">I'm so privileged to be involved in the @bootstrap hiring process! <a href="#">#internship #inclusivebusiness</a> <a href="#">#internship</a> <a href="#"> #hiring</a> <a href="#">#apply</a> </p>
+                      <p className="mt-3 mb-0">I'm so privileged to be involved in the @bootstrap hiring process! <Link to="#">#internship #inclusivebusiness</Link> <Link to="#">#internship</Link> <Link to="#"> #hiring</Link> <Link to="#">#apply</Link> </p>
                       { /* <!-- likes --> */ }
                       <ul className="nav nav-stack py-3 small">
                         <li className="nav-item">
-                          <a className="nav-link active" href="#!"> <i className="bi bi-hand-thumbs-up-fill pe-1"></i>Liked (56)</a>
+                          <Link className="nav-link active" to="#!"> <i className="bi bi-hand-thumbs-up-fill pe-1"></i>Liked (56)</Link>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</a>
+                          <Link className="nav-link" to="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</Link>
                         </li>
                         { /* <!-- Card share action START --> */ }
                         <li className="nav-item dropdown ms-auto">
-                          <a className="nav-link mb-0" href="#" id="cardShareAction6" data-bs-toggle="dropdown" aria-expanded="false">
+                          <Link className="nav-link mb-0" to="#" id="cardShareAction6" data-bs-toggle="dropdown" aria-expanded="false">
                             <i className="bi bi-reply-fill fa-flip-horizontal pe-1"></i>Share (3)
-                          </a>
+                          </Link>
                           { /* <!-- Card share action dropdown menu --> */ }
                           <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction6">
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</a></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</Link></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</Link></li>
                             <li><hr className="dropdown-divider" /></li>
-                            <li><a className="dropdown-item" href="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</a></li>
+                            <li><Link className="dropdown-item" to="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</Link></li>
                           </ul>
                         </li>
                         { /* <!-- Card share action END --> */ }
@@ -768,7 +769,7 @@ export default function ProfileMedia() {
                               <div className="bg-light rounded-start-top-0 p-3 rounded">
                                 <div className="d-flex justify-content-center">
                                   <div className="me-2">
-                                    <h6 className="mb-1"> <a href="#!"> Frances Guerrero </a></h6>
+                                    <h6 className="mb-1"> <Link to="#!"> Frances Guerrero </Link></h6>
                                     <p className="small mb-0">Removed demands expense account in outward tedious do.</p>
                                   </div>
                                   <small>5hr</small>
@@ -777,13 +778,13 @@ export default function ProfileMedia() {
                               { /* <!-- Comment react --> */ }
                               <ul className="nav nav-divider py-2 small">
                                 <li className="nav-item">
-                                  <a className="nav-link" href="#!"> Like (3)</a>
+                                  <Link className="nav-link" to="#!"> Like (3)</Link>
                                 </li>
                                 <li className="nav-item">
-                                  <a className="nav-link" href="#!"> Reply</a>
+                                  <Link className="nav-link" to="#!"> Reply</Link>
                                 </li>
                                 <li className="nav-item">
-                                  <a className="nav-link" href="#!"> View 5 replies</a>
+                                  <Link className="nav-link" to="#!"> View 5 replies</Link>
                                 </li>
                               </ul>
                             </div>

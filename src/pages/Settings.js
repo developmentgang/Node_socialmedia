@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import ProfileCol from '../components/Home/ProfileCol'
 
 export default function Settings() {
@@ -67,14 +68,14 @@ export default function Settings() {
                       <label className="form-label">Phone number</label>
                       <input type="text" className="form-control" placeholder="" defaultValue="(678) 324-1251" />
                       { /* <!-- Add new number --> */ }
-                      <a className="btn btn-sm btn-dashed rounded mt-2" href="#!"> <i className="bi bi-plus-circle-dotted me-1"></i>Add new phone number</a>
+                      <Link className="btn btn-sm btn-dashed rounded mt-2" to="#!"> <i className="bi bi-plus-circle-dotted me-1"></i>Add new phone number</Link>
                     </div>
                     { /* <!-- Phone number --> */ }
                     <div className="col-sm-6">
                       <label className="form-label">Email</label>
                       <input type="text" className="form-control" placeholder="" defaultValue="sam@webestica.com" />
                       { /* <!-- Add new email --> */ }
-                      <a className="btn btn-sm btn-dashed rounded mt-2" href="#!"> <i className="bi bi-plus-circle-dotted me-1"></i>Add new email address</a>
+                      <Link className="btn btn-sm btn-dashed rounded mt-2" to="#!"> <i className="bi bi-plus-circle-dotted me-1"></i>Add new email address</Link>
                     </div>
                     { /* <!-- Page information --> */ }
                     <div className="col-12">
@@ -211,12 +212,12 @@ export default function Settings() {
                         { /* <!-- Accordion item --> */ }
                         <div className="accordion-item bg-transparent">
                           <h2 className="accordion-header" id="flush-headingOne">
-                            <a href="#!" className="accordion-button mb-0 p-0 collapsed bg-transparent shadow-none" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <Link to="#!" className="accordion-button mb-0 p-0 collapsed bg-transparent shadow-none" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                               <span>
                                 <span className="mb-0 h6 d-block">Email notifications</span>
                                 <small className="small mb-0 text-secondary">As hastened oh produced prospect. </small>
                               </span>
-                            </a>
+                            </Link>
                           </h2>
                           <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#emailNotifications">
                             <div className="accordion-body p-0 pt-3">
@@ -662,15 +663,15 @@ export default function Settings() {
                   { /* <!-- Delete START --> */ }
                   <h6>Before you go...</h6>
                   <ul>
-                    <li>Take a backup of your data <a href="#">Here</a> </li>
+                    <li>Take a backup of your data <Link to="#">Here</Link> </li>
                     <li>If you delete your account, you will lose your all data.</li>
                   </ul>
                   <div className="form-check form-check-md my-4">
                     <input className="form-check-input" type="checkbox" defaultValue="" id="deleteaccountCheck" />
                     <label className="form-check-label" htmlFor="deleteaccountCheck">Yes, I'd like to delete my account</label>
                   </div>
-                  <a href="#" className="btn btn-success-soft btn-sm mb-2 mb-sm-0">Keep my account</a>
-                  <a href="#" className="btn btn-danger btn-sm mb-0">Delete my account</a>
+                  <Link to="#" className="btn btn-success-soft btn-sm mb-2 mb-sm-0">Keep my account</Link>
+                  <Link to="#" className="btn btn-danger btn-sm mb-0">Delete my account</Link>
                   { /* <!-- Delete END --> */ }
                 </div>
               { /* <!-- Card body END --> */ }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function ProfileInfo() {
   return (
@@ -15,13 +16,13 @@ export default function ProfileInfo() {
           <h6>Overview</h6>
           <div className="dropdown ms-auto">
             { /*<!-- Card share action menu --> */}
-            <a className="nav-link text-secondary mb-0" href="#" id="aboutAction" data-bs-toggle="dropdown" aria-expanded="false">
+            <Link className="nav-link text-secondary mb-0" to="#" id="aboutAction" data-bs-toggle="dropdown" aria-expanded="false">
               <i className="bi bi-three-dots"></i>
-            </a>
+            </Link>
             { /*<!-- Card share action dropdown menu --> */}
             <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="aboutAction">
-              <li><a className="dropdown-item" href="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Edit</a></li>
-              <li><a className="dropdown-item" href="#"> <i className="bi bi-trash fa-fw pe-2"></i>Delete</a></li>
+              <li><Link className="dropdown-item" to="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Edit</Link></li>
+              <li><Link className="dropdown-item" to="#"> <i className="bi bi-trash fa-fw pe-2"></i>Delete</Link></li>
             </ul>
           </div>
         </div>
@@ -37,13 +38,13 @@ export default function ProfileInfo() {
             </p>
             <div className="dropdown ms-auto">
               { /*<!-- Card share action menu --> */}
-              <a className="nav-link text-secondary mb-0" href="#" id="aboutAction2" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link className="nav-link text-secondary mb-0" to="#" id="aboutAction2" data-bs-toggle="dropdown" aria-expanded="false">
                 <i className="bi bi-three-dots"></i>
-              </a>
+              </Link>
               { /*<!-- Card share action dropdown menu --> */}
               <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="aboutAction2">
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Edit</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-trash fa-fw pe-2"></i>Delete</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Edit</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-trash fa-fw pe-2"></i>Delete</Link></li>
               </ul>
             </div>
           </div>
@@ -58,13 +59,13 @@ export default function ProfileInfo() {
             </p>
             <div className="dropdown ms-auto">
               { /*<!-- Card share action menu --> */}
-              <a className="nav-link text-secondary mb-0" href="#" id="aboutAction3" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link className="nav-link text-secondary mb-0" to="#" id="aboutAction3" data-bs-toggle="dropdown" aria-expanded="false">
                 <i className="bi bi-three-dots"></i>
-              </a>
+              </Link>
               { /*<!-- Card share action dropdown menu --> */}
               <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="aboutAction3">
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Edit</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-trash fa-fw pe-2"></i>Delete</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Edit</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-trash fa-fw pe-2"></i>Delete</Link></li>
               </ul>
             </div>
           </div>
@@ -79,13 +80,13 @@ export default function ProfileInfo() {
             </p>
             <div className="dropdown ms-auto">
               { /*<!-- Card share action menu --> */}
-              <a className="nav-link text-secondary mb-0" href="#" id="aboutAction4" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link className="nav-link text-secondary mb-0" to="#" id="aboutAction4" data-bs-toggle="dropdown" aria-expanded="false">
                 <i className="bi bi-three-dots"></i>
-              </a>
+              </Link>
               { /*<!-- Card share action dropdown menu --> */}
               <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="aboutAction4">
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Edit</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-trash fa-fw pe-2"></i>Delete</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Edit</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-trash fa-fw pe-2"></i>Delete</Link></li>
               </ul>
             </div>
           </div>
@@ -100,13 +101,13 @@ export default function ProfileInfo() {
             </p>
             <div className="dropdown ms-auto">
               { /*<!-- Card share action menu --> */}
-              <a className="nav-link text-secondary mb-0" href="#" id="aboutAction5" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link className="nav-link text-secondary mb-0" to="#" id="aboutAction5" data-bs-toggle="dropdown" aria-expanded="false">
                 <i className="bi bi-three-dots"></i>
-              </a>
+              </Link>
               { /*<!-- Card share action dropdown menu --> */}
               <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="aboutAction5">
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Edit</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-trash fa-fw pe-2"></i>Delete</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Edit</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-trash fa-fw pe-2"></i>Delete</Link></li>
               </ul>
             </div>
           </div>
@@ -121,13 +122,13 @@ export default function ProfileInfo() {
             </p>
             <div className="dropdown ms-auto">
               { /*<!-- Card share action menu --> */}
-              <a className="nav-link text-secondary mb-0" href="#" id="aboutAction6" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link className="nav-link text-secondary mb-0" to="#" id="aboutAction6" data-bs-toggle="dropdown" aria-expanded="false">
                 <i className="bi bi-three-dots"></i>
-              </a>
+              </Link>
               { /*<!-- Card share action dropdown menu --> */}
               <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="aboutAction6">
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Edit</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-trash fa-fw pe-2"></i>Delete</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Edit</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-trash fa-fw pe-2"></i>Delete</Link></li>
               </ul>
             </div>
           </div>
@@ -142,13 +143,13 @@ export default function ProfileInfo() {
             </p>
             <div className="dropdown ms-auto">
               { /*<!-- Card share action menu --> */}
-              <a className="nav-link text-secondary mb-0" href="#" id="aboutAction7" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link className="nav-link text-secondary mb-0" to="#" id="aboutAction7" data-bs-toggle="dropdown" aria-expanded="false">
                 <i className="bi bi-three-dots"></i>
-              </a>
+              </Link>
               { /*<!-- Card share action dropdown menu --> */}
               <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="aboutAction7">
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Edit</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-trash fa-fw pe-2"></i>Delete</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Edit</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-trash fa-fw pe-2"></i>Delete</Link></li>
               </ul>
             </div>
           </div>
@@ -156,12 +157,12 @@ export default function ProfileInfo() {
         </div>
         <div className="col-sm-6 position-relative">
           { /*<!-- Workplace on START --> */}
-          <a className="btn btn-dashed rounded w-100" href="#!"> <i className="bi bi-plus-circle-dotted me-1"></i>Add a workplace</a>
+          <Link className="btn btn-dashed rounded w-100" to="#!"> <i className="bi bi-plus-circle-dotted me-1"></i>Add a workplace</Link>
           { /*<!-- Workplace on END --> */}
         </div>
         <div className="col-sm-6 position-relative">
           { /*<!-- Education on START --> */}
-          <a className="btn btn-dashed rounded w-100" href="#!"> <i className="bi bi-plus-circle-dotted me-1"></i>Add a education</a>
+          <Link className="btn btn-dashed rounded w-100" to="#!"> <i className="bi bi-plus-circle-dotted me-1"></i>Add a education</Link>
           { /*<!-- Education on END --> */}
         </div>
       </div>
@@ -175,7 +176,7 @@ export default function ProfileInfo() {
     { /*<!-- Card header START --> */}
     <div className="card-header d-sm-flex justify-content-between border-0 pb-0">
       <h5 className="card-title">Interests</h5>
-      <a className="btn btn-primary-soft btn-sm" href="#!"> See all</a>
+      <Link className="btn btn-primary-soft btn-sm" to="#!"> See all</Link>
     </div>
     { /*<!-- Card header END --> */}
     { /*<!-- Card body START --> */}
@@ -188,7 +189,7 @@ export default function ProfileInfo() {
                 <img className="avatar-img" src="assets/images/logo/04.svg" alt="" />
               </div>
               <div className="ms-2">
-                <h6 className="mb-0"> <a className="stretched-link" href="#"> Oracle </a></h6>
+                <h6 className="mb-0"> <Link className="stretched-link" to="#"> Oracle </Link></h6>
                 <p className="small mb-0">7,546,224 followers</p>
               </div>
           </div>
@@ -201,7 +202,7 @@ export default function ProfileInfo() {
                 <img className="avatar-img" src="assets/images/logo/13.svg" alt="" />
               </div>
               <div className="ms-2">
-                <h6 className="mb-0"> <a className="stretched-link" href="#"> Apple </a></h6>
+                <h6 className="mb-0"> <Link className="stretched-link" to="#"> Apple </Link></h6>
                 <p className="small mb-0">102B followers</p>
               </div>
           </div>
@@ -214,7 +215,7 @@ export default function ProfileInfo() {
                 <img className="avatar-img rounded-circle" src="assets/images/avatar/placeholder.jpg" alt="" />
               </div>
               <div className="ms-2">
-                <h6 className="mb-0"> <a className="stretched-link" href="#"> Elon musk </a></h6>
+                <h6 className="mb-0"> <Link className="stretched-link" to="#"> Elon musk </Link></h6>
                 <p className="small mb-0"> CEO and Product Architect of Tesla, Inc 41B followers</p>
               </div>
           </div>
@@ -227,7 +228,7 @@ export default function ProfileInfo() {
                 <img className="avatar-img" src="assets/images/events/04.jpg" alt="" />
               </div>
               <div className="ms-2">
-                <h6 className="mb-0"> <a className="stretched-link" href="#"> The X Factor </a></h6>
+                <h6 className="mb-0"> <Link className="stretched-link" to="#"> The X Factor </Link></h6>
                 <p className="small mb-0">9,654 followers</p>
               </div>
           </div>
@@ -240,7 +241,7 @@ export default function ProfileInfo() {
                 <img className="avatar-img rounded-circle" src="assets/images/logo/12.svg" alt="" />
               </div>
               <div className="ms-2">
-                <h6 className="mb-0"> <a className="stretched-link" href="#"> Getbootstrap </a></h6>
+                <h6 className="mb-0"> <Link className="stretched-link" to="#"> Getbootstrap </Link></h6>
                 <p className="small mb-0">8,457,224 followers</p>
               </div>
           </div>

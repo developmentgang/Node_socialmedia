@@ -97,7 +97,7 @@ export default function ProfileCol() {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/groups"> <img className="me-2 h-20px fa-fw"
-                    src="assets/images/icon/chat-outline-filled.svg"  /><span>Groups </span></Link>
+                    src="assets/images/icon/chat-outline-filled.svg" alt=""/><span>Groups </span></Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/notifications"> <img className="me-2 h-20px fa-fw"
@@ -113,7 +113,7 @@ export default function ProfileCol() {
           { /* <!-- Card body END --> */ }
           { /* <!-- Card footer --> */ }
           <div className="card-footer text-center py-2">
-            <Link className="btn btn-link btn-sm" to="my-profile.html">View Profile </Link>
+            <Link className="btn btn-link btn-sm" to="my-profile">View Profile </Link>
           </div>
         </div>
         { /* <!-- Card END --> */ }
@@ -121,22 +121,22 @@ export default function ProfileCol() {
         { /* <!-- Helper link START --> */ }
         <ul className="nav small mt-4 justify-content-center lh-1">
           <li className="nav-item">
-            <Link className="nav-link" to="my-profile-about.html">About</Link>
+            <Link className="nav-link" to="my-profile-about">About</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="settings.html">Settings</Link>
+            <Link className="nav-link" to="settings">Settings</Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" target="_blank" to="https://support.webestica.com/login">Support </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" target="_blank" to="docs/index.html">Docs </Link>
+            <Link className="nav-link" target="_blank" to="docs/index">Docs </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="help.html">Help</Link>
+            <Link className="nav-link" to="help">Help</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="privacy-and-terms.html">Privacy &amp; terms</Link>
+            <Link className="nav-link" to="privacy-and-terms">Privacy &amp; terms</Link>
           </li>
         </ul>
         { /* <!-- Helper link END --> */ }
