@@ -1,20 +1,18 @@
 import React from 'react'
-import TinySlider from './TinySlider'
+import { Link } from 'react-router-dom'
 
 export default function PostCol() {
   return (
     <>
-    
       { /* <!-- Story START --> */ }
       {/* <TinySlider /> */}
       { /* <!-- Story END --> */ }
-        
       { /* <!-- Share feed START --> */ }
       <div className="card card-body">
         <div className="d-flex mb-3">
           { /* <!-- Avatar --> */ }
           <div className="avatar avatar-xs me-2">
-            <a href="#"> <img className="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt="" /> </a>
+            <Link to="#"> <img className="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt="" /> </Link>
           </div>
           { /* <!-- Post input --> */ }
           <form className="w-100">
@@ -24,27 +22,27 @@ export default function PostCol() {
         { /* <!-- Share feed toolbar START --> */ }
         <ul className="nav nav-pills nav-stack small fw-normal">
           <li className="nav-item">
-            <a className="nav-link bg-light py-1 px-2 mb-0" href="#!" data-bs-toggle="modal" data-bs-target="#feedActionPhoto"> <i className="bi bi-image-fill text-success pe-2"></i>Photo</a>
+            <Link className="nav-link bg-light py-1 px-2 mb-0" to="#!" data-bs-toggle="modal" data-bs-target="#feedActionPhoto"> <i className="bi bi-image-fill text-success pe-2"></i>Photo</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link bg-light py-1 px-2 mb-0" href="#!" data-bs-toggle="modal" data-bs-target="#feedActionVideo"> <i className="bi bi-camera-reels-fill text-info pe-2"></i>Video</a>
+            <Link className="nav-link bg-light py-1 px-2 mb-0" to="#!" data-bs-toggle="modal" data-bs-target="#feedActionVideo"> <i className="bi bi-camera-reels-fill text-info pe-2"></i>Video</Link>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link bg-light py-1 px-2 mb-0" data-bs-toggle="modal" data-bs-target="#modalCreateEvents"> <i className="bi bi-calendar2-event-fill text-danger pe-2"></i>Event </a>
+            <Link to="#" className="nav-link bg-light py-1 px-2 mb-0" data-bs-toggle="modal" data-bs-target="#modalCreateEvents"> <i className="bi bi-calendar2-event-fill text-danger pe-2"></i>Event </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link bg-light py-1 px-2 mb-0" href="#!" data-bs-toggle="modal" data-bs-target="#modalCreateFeed"> <i className="bi bi-emoji-smile-fill text-warning pe-2"></i>Feeling /Activity</a>
+            <Link className="nav-link bg-light py-1 px-2 mb-0" to="#!" data-bs-toggle="modal" data-bs-target="#modalCreateFeed"> <i className="bi bi-emoji-smile-fill text-warning pe-2"></i>Feeling /Activity</Link>
           </li>
           <li className="nav-item dropdown ms-lg-auto">
-            <a className="nav-link bg-light py-1 px-2 mb-0" href="#" id="feedActionShare" data-bs-toggle="dropdown" aria-expanded="false">
+            <Link className="nav-link bg-light py-1 px-2 mb-0" to="#" id="feedActionShare" data-bs-toggle="dropdown" aria-expanded="false">
               <i className="bi bi-three-dots"></i>
-            </a>
+            </Link>
             { /* <!-- Dropdown menu --> */ }
             <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="feedActionShare">
-              <li><a className="dropdown-item" href="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Create a poll</a></li>
-              <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Ask a question </a></li>
+              <li><Link className="dropdown-item" to="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Create a poll</Link></li>
+              <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Ask a question </Link></li>
               <li><hr className="dropdown-divider" /></li>
-              <li><a className="dropdown-item" href="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Help</a></li>
+              <li><Link className="dropdown-item" to="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Help</Link></li>
             </ul>
           </li>
         </ul>
@@ -60,12 +58,12 @@ export default function PostCol() {
             <div className="d-flex align-items-center">
               { /* <!-- Avatar --> */ }
               <div className="avatar avatar-story me-2">
-                <a href="#!"> <img className="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt="" /> </a>
+                <Link to="#!"> <img className="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt="" /> </Link>
               </div>
               { /* <!-- Info --> */ }
               <div>
                 <div className="nav nav-divider">
-                  <h6 className="nav-item card-title mb-0"> <a href="#!"> Lori Ferguson </a></h6>
+                  <h6 className="nav-item card-title mb-0"> <Link to="#!"> Lori Ferguson </Link></h6>
                   <span className="nav-item small"> 2hr</span>
                 </div>
                 <p className="mb-0 small">Web Developer at Webestica</p>
@@ -73,17 +71,17 @@ export default function PostCol() {
             </div>
             { /* <!-- Card feed action dropdown START --> */ }
             <div className="dropdown">
-              <a href="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link to="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
                 <i className="bi bi-three-dots"></i>
-              </a>
+              </Link>
               { /* <!-- Card feed action dropdown menu --> */ }
               <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction">
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</Link></li>
                 <li><hr className="dropdown-divider"  /></li>
-                <li><a className="dropdown-item" href="#" > <i className="bi bi-flag fa-fw pe-2"></i>Report post</a></li>
+                <li><Link className="dropdown-item" to="#" > <i className="bi bi-flag fa-fw pe-2"></i>Report post</Link></li>
               </ul>
             </div>
             { /* <!-- Card feed action dropdown END --> */ }
@@ -98,24 +96,24 @@ export default function PostCol() {
           { /* <!-- Feed react START --> */ }
           <ul className="nav nav-stack py-3 small">
             <li className="nav-item">
-              <a className="nav-link active" href="#!"> <i className="bi bi-hand-thumbs-up-fill pe-1"></i>Liked (56)</a>
+              <Link className="nav-link active" to="#!"> <i className="bi bi-hand-thumbs-up-fill pe-1"></i>Liked (56)</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</a>
+              <Link className="nav-link" to="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</Link>
             </li>
             { /* <!-- Card share action START --> */ }
             <li className="nav-item dropdown ms-sm-auto">
-              <a className="nav-link mb-0" href="#" id="cardShareAction" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link className="nav-link mb-0" to="#" id="cardShareAction" data-bs-toggle="dropdown" aria-expanded="false">
                 <i className="bi bi-reply-fill flip-horizontal ps-1"></i>Share (3)
-              </a>
+              </Link>
               { /* <!-- Card share action dropdown menu --> */ }
               <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction">
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</Link></li>
                 <li><hr className="dropdown-divider" /></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</Link></li>
               </ul>
             </li>
             { /* <!-- Card share action END --> */ }
@@ -126,7 +124,7 @@ export default function PostCol() {
           <div className="d-flex mb-3">
             { /* <!-- Avatar --> */ }
             <div className="avatar avatar-xs me-2">
-              <a href="#!"> <img className="avatar-img rounded-circle" src="assets/images/avatar/12.jpg" alt="" /> </a>
+              <Link to="#!"> <img className="avatar-img rounded-circle" src="assets/images/avatar/12.jpg" alt="" /> </Link>
             </div>
             { /* <!-- Comment box  --> */ }
             <form className="w-100">
@@ -140,13 +138,13 @@ export default function PostCol() {
               <div className="d-flex position-relative">
                 { /* <!-- Avatar --> */ }
                 <div className="avatar avatar-xs">
-                  <a href="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt="" /></a>
+                  <Link to="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt="" /></Link>
                 </div>
                 <div className="ms-2">
                   { /* <!-- Comment by --> */ }
                   <div className="bg-light rounded-start-top-0 p-3 rounded">
                     <div className="d-flex justify-content-between">
-                      <h6 className="mb-1"> <a href="#!"> Frances Guerrero </a></h6>
+                      <h6 className="mb-1"> <Link to="#!"> Frances Guerrero </Link></h6>
                       <small className="ms-2">5hr</small>
                     </div>
                     <p className="small mb-0">Removed demands expense account in outward tedious do. Particular way thoroughly unaffected projection.</p>
@@ -154,13 +152,13 @@ export default function PostCol() {
                   { /* <!-- Comment react --> */ }
                   <ul className="nav nav-divider py-2 small">
                     <li className="nav-item">
-                      <a className="nav-link" href="#!"> Like (3)</a>
+                      <Link className="nav-link" to="#!"> Like (3)</Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#!"> Reply</a>
+                      <Link className="nav-link" to="#!"> Reply</Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#!"> View 5 replies</a>
+                      <Link className="nav-link" to="#!"> View 5 replies</Link>
                     </li>
                   </ul>
                 </div>
@@ -172,13 +170,13 @@ export default function PostCol() {
                   <div className="d-flex">
                     { /* <!-- Avatar --> */ }
                     <div className="avatar avatar-xs">
-                      <a href="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/06.jpg" alt="" /></a>
+                      <Link to="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/06.jpg" alt="" /></Link>
                     </div>
                     { /* <!-- Comment by --> */ }
                     <div className="ms-2">
                       <div className="bg-light p-3 rounded">
                         <div className="d-flex justify-content-between">
-                          <h6 className="mb-1"> <a href="#!"> Lori Stevens </a> </h6>
+                          <h6 className="mb-1"> <Link to="#!"> Lori Stevens </Link> </h6>
                           <small className="ms-2">2hr</small>
                         </div>
                         <p className="small mb-0">See resolved goodness felicity shy civility domestic had but Drawings offended yet answered Jennings perceive.</p>
@@ -186,10 +184,10 @@ export default function PostCol() {
                       { /* <!-- Comment react --> */ }
                       <ul className="nav nav-divider py-2 small">
                         <li className="nav-item">
-                          <a className="nav-link" href="#!"> Like (5)</a>
+                          <Link className="nav-link" to="#!"> Like (5)</Link>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="#!"> Reply</a>
+                          <Link className="nav-link" to="#!"> Reply</Link>
                         </li>
                       </ul>
                     </div>
@@ -201,13 +199,13 @@ export default function PostCol() {
                   <div className="d-flex">
                     { /* <!-- Avatar --> */ }
                     <div className="avatar avatar-story avatar-xs">
-                      <a href="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/07.jpg" alt="" /></a>
+                      <Link to="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/07.jpg" alt="" /></Link>
                     </div>
                     { /* <!-- Comment by --> */ }
                     <div className="ms-2">
                       <div className="bg-light p-3 rounded">
                         <div className="d-flex justify-content-between">
-                          <h6 className="mb-1"> <a href="#!"> Billy Vasquez </a> </h6>
+                          <h6 className="mb-1"> <Link to="#!"> Billy Vasquez </Link> </h6>
                           <small className="ms-2">15min</small>
                         </div>
                         <p className="small mb-0">Wishing calling is warrant settled was lucky.</p>
@@ -215,10 +213,10 @@ export default function PostCol() {
                       { /* <!-- Comment react --> */ }
                       <ul className="nav nav-divider py-2 small">
                         <li className="nav-item">
-                          <a className="nav-link" href="#!"> Like</a>
+                          <Link className="nav-link" to="#!"> Like</Link>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="#!"> Reply</a>
+                          <Link className="nav-link" to="#!"> Reply</Link>
                         </li>
                       </ul>
                     </div>
@@ -227,14 +225,14 @@ export default function PostCol() {
                 { /* <!-- Comment item END --> */ }
               </ul>
               { /* <!-- Load more replies --> */ }
-              <a href="#!" role="button" className="btn btn-link btn-link-loader btn-sm text-secondary d-flex align-items-center mb-3 ms-5" data-bs-toggle="button" aria-pressed="true">
+              <Link to="#!" role="button" className="btn btn-link btn-link-loader btn-sm text-secondary d-flex align-items-center mb-3 ms-5" data-bs-toggle="button" aria-pressed="true">
                 <div className="spinner-dots me-2">
                   <span className="spinner-dot"></span>
                   <span className="spinner-dot"></span>
                   <span className="spinner-dot"></span>
                 </div>
                 Load more replies 
-              </a>
+              </Link>
               { /* <!-- Comment item nested END --> */ }
             </li>
             { /* <!-- Comment item END --> */ }
@@ -243,13 +241,13 @@ export default function PostCol() {
               <div className="d-flex">
                 { /* <!-- Avatar --> */ }
                 <div className="avatar avatar-xs">
-                <a href="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt="" /></a>
+                <Link to="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt="" /></Link>
                 </div>
                 { /* <!-- Comment by --> */ }
                 <div className="ms-2">
                   <div className="bg-light p-3 rounded">
                     <div className="d-flex justify-content-between">
-                      <h6 className="mb-1"> <a href="#!"> Frances Guerrero </a> </h6>
+                      <h6 className="mb-1"> <Link to="#!"> Frances Guerrero </Link> </h6>
                       <small className="ms-2">4min</small>
                     </div>
                     <p className="small mb-0">Removed demands expense account in outward tedious do. Particular way thoroughly unaffected projection.</p>
@@ -257,13 +255,13 @@ export default function PostCol() {
                   { /* <!-- Comment react --> */ }
                   <ul className="nav nav-divider pt-2 small">
                     <li className="nav-item">
-                      <a className="nav-link" href="#!"> Like (1)</a>
+                      <Link className="nav-link" to="#!"> Like (1)</Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#!"> Reply</a>
+                      <Link className="nav-link" to="#!"> Reply</Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#!"> View 6 replies</a>
+                      <Link className="nav-link" to="#!"> View 6 replies</Link>
                     </li>
                   </ul>
                 </div>
@@ -277,14 +275,14 @@ export default function PostCol() {
         { /* <!-- Card footer START --> */ }
         <div className="card-footer border-0 pt-0">
           { /* <!-- Load more comments --> */ }
-          <a href="#!" role="button" className="btn btn-link btn-link-loader btn-sm text-secondary d-flex align-items-center" data-bs-toggle="button" aria-pressed="true">
+          <Link to="#!" role="button" className="btn btn-link btn-link-loader btn-sm text-secondary d-flex align-items-center" data-bs-toggle="button" aria-pressed="true">
             <div className="spinner-dots me-2">
               <span className="spinner-dot"></span>
               <span className="spinner-dot"></span>
               <span className="spinner-dot"></span>
             </div>
             Load more comments 
-          </a>
+          </Link>
         </div>
         { /* <!-- Card footer END --> */ }
       </div>
@@ -298,27 +296,27 @@ export default function PostCol() {
             <div className="d-flex align-items-center">
               { /* <!-- Avatar --> */ }
               <div className="avatar me-2">
-                <a href="#!"> <img className="avatar-img rounded-circle" src="assets/images/logo/12.svg" alt="" /> </a>
+                <Link to="#!"> <img className="avatar-img rounded-circle" src="assets/images/logo/12.svg" alt="" /> </Link>
               </div>
               { /* <!-- Info --> */ }
               <div>
-                <h6 className="card-title mb-0"><a href="#!"> Bootstrap: Front-end framework </a></h6>
-                <a href="#!" className="mb-0 text-body">Sponsored <i className="bi bi-info-circle ps-1" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="You're seeing this ad because your activity meets the intended audience of our site."></i> </a>
+                <h6 className="card-title mb-0"><Link to="#!"> Bootstrap: Front-end framework </Link></h6>
+                <Link to="#!" className="mb-0 text-body">Sponsored <i className="bi bi-info-circle ps-1" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="You're seeing this ad because your activity meets the intended audience of our site."></i> </Link>
               </div>
             </div>
             { /* <!-- Card share action START --> */ }
             <div className="dropdown">
-              <a href="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardShareAction2" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link to="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardShareAction2" data-bs-toggle="dropdown" aria-expanded="false">
                 <i className="bi bi-three-dots"></i>
-              </a>
+              </Link>
               { /* <!-- Card share action dropdown menu --> */ }
               <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction2">
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</Link></li>
                 <li><hr className="dropdown-divider"  /></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</Link></li>
               </ul>
             </div>
             { /* <!-- Card share action START --> */ }
@@ -335,7 +333,7 @@ export default function PostCol() {
         { /* <!-- Card footer START --> */ }
         <div className="card-footer border-0 d-flex justify-content-between align-items-center">
           <p className="mb-0">Currently v5.1.3 </p>
-          <a className="btn btn-primary-soft btn-sm" href="#"> Download now </a>
+          <Link className="btn btn-primary-soft btn-sm" to="#"> Download now </Link>
         </div>
         { /* <!-- Card footer END --> */ }
 
@@ -350,11 +348,11 @@ export default function PostCol() {
             <div className="d-flex align-items-center">
               { /* <!-- Avatar --> */ }
               <div className="avatar me-2">
-                <a href="#"> <img className="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt="" /> </a>
+                <Link to="#"> <img className="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt="" /> </Link>
               </div>
               { /* <!-- Info --> */ }
               <div>
-                <h6 className="card-title mb-0"> <a href="#"> Judy Nguyen </a></h6>
+                <h6 className="card-title mb-0"> <Link to="#"> Judy Nguyen </Link></h6>
                   <div className="nav nav-divider">
                     <p className="nav-item mb-0 small">Web Developer at Webestica</p>
                     <span className="nav-item small" data-bs-toggle="tooltip" data-bs-placement="top" title="Public"> <i className="bi bi-globe"></i> </span>
@@ -363,17 +361,17 @@ export default function PostCol() {
             </div>
             { /* <!-- Card share action START --> */ }
             <div className="dropdown">
-              <a href="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardShareAction3" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link to="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardShareAction3" data-bs-toggle="dropdown" aria-expanded="false">
                 <i className="bi bi-three-dots"></i>
-              </a>
+              </Link>
               { /* <!-- Card share action dropdown menu --> */ }
               <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction3">
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</Link></li>
                 <li><hr className="dropdown-divider" /></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</Link></li>
               </ul>
             </div>
             { /* <!-- Card share action END --> */ }
@@ -382,29 +380,29 @@ export default function PostCol() {
         { /* <!-- Card header START --> */ }
         { /* <!-- Card body START --> */ }
         <div className="card-body">
-          <p>I'm so privileged to be involved in the <a href="#!">@bootstrap </a>hiring process! Interviewing with their team was fun and I hope this can be a valuable resource for folks! <a href="#!"> #inclusivebusiness</a> <a href="#!"> #internship</a> <a href="#!"> #hiring</a> <a href="#"> #apply </a></p>
+          <p>I'm so privileged to be involved in the <Link to="#!">@bootstrap </Link>hiring process! Interviewing with their team was fun and I hope this can be a valuable resource for folks! <Link to="#!"> #inclusivebusiness</Link> <Link to="#!"> #internship</Link> <Link to="#!"> #hiring</Link> <Link to="#"> #apply </Link></p>
           { /* <!-- Card feed grid START --> */ }
           <div className="d-flex justify-content-between">
             <div className="row g-3">
               <div className="col-6">
                 { /* <!-- Grid img --> */ }
-                <a className="h-100" href="assets/images/post/1by1/03.jpg" data-glightbox data-gallery="image-popup">
-                  <img className="rounded img-fluid" src="assets/images/post/1by1/03.jpg" alt="Image" />
-                </a>
+                <Link className="h-100" to="assets/images/post/1by1/03.jpg" data-glightbox data-gallery="image-popup">
+                  <img className="rounded img-fluid" src="assets/images/post/1by1/03.jpg" alt="img1" />
+                </Link>
               </div>
               <div className="col-6">
                 { /* <!-- Grid img --> */ }
-                <a href="assets/images/post/3by2/01.jpg" data-glightbox data-gallery="image-popup">
-                  <img className="rounded img-fluid" src="assets/images/post/3by2/01.jpg" alt="Image" />
-                </a>
+                <Link to="assets/images/post/3by2/01.jpg" data-glightbox data-gallery="image-popup">
+                  <img className="rounded img-fluid" src="assets/images/post/3by2/01.jpg" alt="Img2" />
+                </Link>
                 { /* <!-- Grid img --> */ }
                 <div className="position-relative bg-dark mt-3 rounded">
                   <div className="hover-actions-item position-absolute top-50 start-50 translate-middle z-index-9">
-                    <a className="btn btn-link text-white" href="#"> View all </a>
+                    <Link className="btn btn-link text-white" to="#"> View all </Link>
                   </div>
-                  <a href="assets/images/post/3by2/02.jpg" data-glightbox data-gallery="image-popup">
+                  <Link to="assets/images/post/3by2/02.jpg" data-glightbox data-gallery="image-popup">
                     <img className="img-fluid opacity-50 rounded" src="assets/images/post/3by2/02.jpg" alt="" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -414,10 +412,10 @@ export default function PostCol() {
           { /* <!-- Feed react START --> */ }
           <ul className="nav nav-stack py-3 small">
             <li className="nav-item">
-              <a className="nav-link active text-secondary" href="#!"> <i className="bi bi-heart-fill me-1 icon-xs bg-danger text-white rounded-circle"></i> Louis, Billy and 126 others </a>
+              <Link className="nav-link active text-secondary" to="#!"> <i className="bi bi-heart-fill me-1 icon-xs bg-danger text-white rounded-circle"></i> Louis, Billy and 126 others </Link>
             </li>
             <li className="nav-item ms-sm-auto">
-              <a className="nav-link" href="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</a>
+              <Link className="nav-link" to="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</Link>
             </li>
           </ul>
           { /* <!-- Feed react END --> */ }
@@ -425,26 +423,26 @@ export default function PostCol() {
           { /* <!-- Feed react START --> */ }
           <ul className="nav nav-pills nav-pills-light nav-fill nav-stack small border-top border-bottom py-1 mb-3">
             <li className="nav-item">
-              <a className="nav-link mb-0 active" href="#!"> <i className="bi bi-heart pe-1"></i>Liked (56)</a>
+              <Link className="nav-link mb-0 active" to="#!"> <i className="bi bi-heart pe-1"></i>Liked (56)</Link>
             </li>
             { /* <!-- Card share action menu START --> */ }
             <li className="nav-item dropdown">
-              <a href="#" className="nav-link mb-0" id="cardShareAction4" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link to="#" className="nav-link mb-0" id="cardShareAction4" data-bs-toggle="dropdown" aria-expanded="false">
                 <i className="bi bi-reply-fill flip-horizontal ps-1"></i>Share (3)
-              </a>
+              </Link>
                 { /* <!-- Card share action dropdown menu --> */ }
                 <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction4">
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</Link></li>
                 <li><hr className="dropdown-divider" /></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</Link></li>
               </ul>
             </li>
             { /* <!-- Card share action menu END --> */ }
             <li className="nav-item">
-              <a className="nav-link mb-0" href="#!"> <i className="bi bi-send-fill pe-1"></i>Send</a>
+              <Link className="nav-link mb-0" to="#!"> <i className="bi bi-send-fill pe-1"></i>Send</Link>
             </li>
           </ul>
           { /* <!-- Feed react START --> */ }
@@ -456,13 +454,13 @@ export default function PostCol() {
               <div className="d-flex">
                 { /* <!-- Avatar --> */ }
                 <div className="avatar avatar-xs">
-                  <a href="#"> <img className="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt="" /> </a>
+                  <Link to="#"> <img className="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt="" /> </Link>
                 </div>
                 <div className="ms-2">
                   { /* <!-- Comment by --> */ }
                   <div className="bg-light rounded-start-top-0 p-3 rounded">
                     <div className="d-flex justify-content-between">
-                      <h6 className="mb-1"> <a href="#!"> Frances Guerrero </a></h6>
+                      <h6 className="mb-1"> <Link to="#!"> Frances Guerrero </Link></h6>
                       <small className="ms-2">5hr</small>
                     </div>
                     <p className="small mb-0">Removed demands expense account in outward tedious do. Particular way thoroughly unaffected projection.</p>
@@ -470,13 +468,13 @@ export default function PostCol() {
                   { /* <!-- Comment rect --> */ }
                   <ul className="nav nav-divider py-2 small">
                     <li className="nav-item">
-                      <a className="nav-link" href="#!"> Like (3)</a>
+                      <Link className="nav-link" to="#!"> Like (3)</Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#!"> Reply</a>
+                      <Link className="nav-link" to="#!"> Reply</Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#!"> View 5 replies</a>
+                      <Link className="nav-link" to="#!"> View 5 replies</Link>
                     </li>
                   </ul>
                 </div>
@@ -488,13 +486,13 @@ export default function PostCol() {
                   <div className="d-flex">
                     { /* <!-- Avatar --> */ }
                     <div className="avatar avatar-xs">
-                      <a href="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/06.jpg" alt="" /></a>
+                      <Link to="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/06.jpg" alt="" /></Link>
                     </div>
                     { /* <!-- Comment by --> */ }
                     <div className="ms-2">
                       <div className="bg-light p-3 rounded">
                         <div className="d-flex justify-content-between">
-                          <h6 className="mb-1"> <a href="#!"> Lori Stevens </a> </h6>
+                          <h6 className="mb-1"> <Link to="#!"> Lori Stevens </Link> </h6>
                           <small className="ms-2">2hr</small>
                         </div>
                         <p className="small mb-0">See resolved goodness felicity shy civility domestic had but Drawings offended yet answered Jennings perceive.</p>
@@ -502,10 +500,10 @@ export default function PostCol() {
                       { /* <!-- Comment rect --> */ }
                       <ul className="nav nav-divider py-2 small">
                         <li className="nav-item">
-                          <a className="nav-link" href="#!"> Like (5)</a>
+                          <Link className="nav-link" to="#!"> Like (5)</Link>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="#!"> Reply</a>
+                          <Link className="nav-link" to="#!"> Reply</Link>
                         </li>
                       </ul>
                     </div>
@@ -517,13 +515,13 @@ export default function PostCol() {
                   <div className="d-flex">
                     { /* <!-- Avatar --> */ }
                     <div className="avatar avatar-xs">
-                      <a href="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/07.jpg" alt="" /></a>
+                      <Link to="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/07.jpg" alt="" /></Link>
                     </div>
                     { /* <!-- Comment by --> */ }
                     <div className="ms-2">
                       <div className="bg-light p-3 rounded">
                         <div className="d-flex justify-content-between">
-                          <h6 className="mb-1"> <a href="#!"> Billy Vasquez </a> </h6>
+                          <h6 className="mb-1"> <Link to="#!"> Billy Vasquez </Link> </h6>
                           <small className="ms-2">15min</small>
                         </div>
                         <p className="small mb-0">Wishing calling is warrant settled was lucky.</p>
@@ -531,10 +529,10 @@ export default function PostCol() {
                       { /* <!-- Comment rect --> */ }
                       <ul className="nav nav-divider py-2 small">
                         <li className="nav-item">
-                          <a className="nav-link" href="#!"> Like</a>
+                          <Link className="nav-link" to="#!"> Like</Link>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="#!"> Reply</a>
+                          <Link className="nav-link" to="#!"> Reply</Link>
                         </li>
                       </ul>
                     </div>
@@ -542,14 +540,14 @@ export default function PostCol() {
                 </li>
               </ul>
               { /* <!-- Load more replies --> */ }
-              <a href="#!" role="button" className="btn btn-link btn-link-loader btn-sm text-secondary d-flex align-items-center mb-3 ms-5" data-bs-toggle="button" aria-pressed="true">
+              <Link to="#!" role="button" className="btn btn-link btn-link-loader btn-sm text-secondary d-flex align-items-center mb-3 ms-5" data-bs-toggle="button" aria-pressed="true">
                 <div className="spinner-dots me-2">
                   <span className="spinner-dot"></span>
                   <span className="spinner-dot"></span>
                   <span className="spinner-dot"></span>
                 </div>
                 Load more replies 
-              </a>
+              </Link>
             </li>
             { /* <!-- Comment item END --> */ }
             { /* <!-- Comment item START --> */ }
@@ -557,13 +555,13 @@ export default function PostCol() {
               <div className="d-flex">
                 { /* <!-- Avatar --> */ }
                 <div className="avatar avatar-xs">
-                <a href="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt="" /></a>
+                <Link to="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt="" /></Link>
                 </div>
                 { /* <!-- Comment by --> */ }
                 <div className="ms-2">
                   <div className="bg-light p-3 rounded">
                     <div className="d-flex justify-content-center">
-                      <h6 className="mb-1"> <a href="#!"> Frances Guerrero </a> </h6>
+                      <h6 className="mb-1"> <Link to="#!"> Frances Guerrero </Link> </h6>
                       <small className="ms-2">4min</small>
                     </div>
                     <p className="small mb-0">Congratulations:)</p>
@@ -574,13 +572,13 @@ export default function PostCol() {
                   { /* <!-- Comment rect --> */ }
                   <ul className="nav nav-divider pt-2 small">
                     <li className="nav-item">
-                      <a className="nav-link" href="#!"> Like (1)</a>
+                      <Link className="nav-link" to="#!"> Like (1)</Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#!"> Reply</a>
+                      <Link className="nav-link" to="#!"> Reply</Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#!"> View 6 replies</a>
+                      <Link className="nav-link" to="#!"> View 6 replies</Link>
                     </li>
                   </ul>
                 </div>
@@ -594,14 +592,14 @@ export default function PostCol() {
         { /* <!-- Card footer START --> */ }
         <div className="card-footer border-0 pt-0">
           { /* <!-- Load more comments --> */ }
-          <a href="#!" role="button" className="btn btn-link btn-link-loader btn-sm text-secondary d-flex align-items-center" data-bs-toggle="button" aria-pressed="true">
+          <Link to="#!" role="button" className="btn btn-link btn-link-loader btn-sm text-secondary d-flex align-items-center" data-bs-toggle="button" aria-pressed="true">
             <div className="spinner-dots me-2">
               <span className="spinner-dot"></span>
               <span className="spinner-dot"></span>
               <span className="spinner-dot"></span>
             </div>
             Load more comments 
-          </a>
+          </Link>
         </div>
         { /* <!-- Card footer END --> */ }
       </div>
@@ -615,26 +613,26 @@ export default function PostCol() {
             <div className="d-flex align-items-center">
               { /* <!-- Avatar --> */ }
               <div className="avatar me-2">
-                <a href="#"> <img className="avatar-img rounded-circle" src="assets/images/logo/13.svg" alt="" /> </a>
+                <Link to="#"> <img className="avatar-img rounded-circle" src="assets/images/logo/13.svg" alt="" /> </Link>
               </div>
               { /* <!-- Title --> */ }
               <div>
-                <h6 className="card-title mb-0"> <a href="#!"> Apple Education </a></h6>
+                <h6 className="card-title mb-0"> <Link to="#!"> Apple Education </Link></h6>
                 <p className="mb-0 small">9 November at 23:29</p>
               </div>
             </div>
             { /* <!-- Card share action menu --> */ }
-            <a href="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardShareAction5" data-bs-toggle="dropdown" aria-expanded="false">
+            <Link to="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardShareAction5" data-bs-toggle="dropdown" aria-expanded="false">
               <i className="bi bi-three-dots"></i>
-            </a>
+            </Link>
             { /* <!-- Card share action dropdown menu --> */ }
             <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction5">
-              <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</a></li>
-              <li><a className="dropdown-item" href="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </a></li>
-              <li><a className="dropdown-item" href="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</a></li>
-              <li><a className="dropdown-item" href="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</a></li>
+              <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</Link></li>
+              <li><Link className="dropdown-item" to="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </Link></li>
+              <li><Link className="dropdown-item" to="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</Link></li>
+              <li><Link className="dropdown-item" to="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</Link></li>
               <li><hr className="dropdown-divider" /></li>
-              <li><a className="dropdown-item" href="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</a></li>
+              <li><Link className="dropdown-item" to="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</Link></li>
             </ul>
           </div>
             { /* <!-- Card share action END --> */ }
@@ -647,10 +645,10 @@ export default function PostCol() {
           { /* <!-- Feed react START --> */ }
           <ul className="nav nav-stack pb-2 small">
             <li className="nav-item">
-              <a className="nav-link active text-secondary" href="#!"> <i className="bi bi-heart-fill me-1 icon-xs bg-danger text-white rounded-circle"></i> Louis, Billy and 126 others </a>
+              <Link className="nav-link active text-secondary" to="#!"> <i className="bi bi-heart-fill me-1 icon-xs bg-danger text-white rounded-circle"></i> Louis, Billy and 126 others </Link>
             </li>
             <li className="nav-item ms-sm-auto">
-              <a className="nav-link" href="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</a>
+              <Link className="nav-link" to="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</Link>
             </li>
           </ul>
           { /* <!-- Feed react END --> */ }
@@ -661,26 +659,26 @@ export default function PostCol() {
           { /* <!-- Feed react START --> */ }
           <ul className="nav nav-fill nav-stack small">
             <li className="nav-item">
-              <a className="nav-link mb-0 active" href="#!"> <i className="bi bi-heart pe-1"></i>Liked (56)</a>
+              <Link className="nav-link mb-0 active" to="#!"> <i className="bi bi-heart pe-1"></i>Liked (56)</Link>
             </li>
             { /* <!-- Card share action dropdown START --> */ }
             <li className="nav-item dropdown">
-              <a href="#" className="nav-link mb-0" id="cardShareAction6" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link to="#" className="nav-link mb-0" id="cardShareAction6" data-bs-toggle="dropdown" aria-expanded="false">
                 <i className="bi bi-reply-fill flip-horizontal ps-1"></i>Share (3)
-              </a>
+              </Link>
               { /* <!-- Card share action dropdown menu --> */ }
               <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction6">
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</Link></li>
                 <li><hr className="dropdown-divider" /></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</Link></li>
               </ul>
             </li>
             { /* <!-- Card share action dropdown END --> */ }
             <li className="nav-item">
-              <a className="nav-link mb-0" href="#!"> <i className="bi bi-send-fill pe-1"></i>Send</a>
+              <Link className="nav-link mb-0" to="#!"> <i className="bi bi-send-fill pe-1"></i>Send</Link>
             </li>
           </ul>
           { /* <!-- Feed react END --> */ }
@@ -709,9 +707,9 @@ export default function PostCol() {
                   { /* <!-- Card body --> */ }
                   <div className="card-body p-2 pb-0">
                     <div className="avatar avatar-xl">
-                      <a href="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/09.jpg" alt="" /></a>
+                      <Link to="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/09.jpg" alt="" /></Link>
                     </div>
-                    <h6 className="card-title mb-1 mt-3"> <a href="#!"> Amanda Reed </a></h6>
+                    <h6 className="card-title mb-1 mt-3"> <Link to="#!"> Amanda Reed </Link></h6>
                     <p className="mb-0 small lh-sm">50 mutual connections</p>
                   </div>
                   { /* <!-- Card footer --> */ }
@@ -727,9 +725,9 @@ export default function PostCol() {
                   { /* <!-- Card body --> */ }
                   <div className="card-body p-2 pb-0">
                     <div className="avatar avatar-story avatar-xl">
-                      <a href="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/10.jpg" alt="" /></a>
+                      <Link to="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/10.jpg" alt="" /></Link>
                     </div>
-                    <h6 className="card-title mb-1 mt-3"> <a href="#!"> Larry Lawson </a></h6>
+                    <h6 className="card-title mb-1 mt-3"> <Link to="#!"> Larry Lawson </Link></h6>
                     <p className="mb-0 small lh-sm">33 mutual connections</p>
                   </div>
                   { /* <!-- Card footer --> */ }
@@ -745,9 +743,9 @@ export default function PostCol() {
                   { /* <!-- Card body --> */ }
                   <div className="card-body p-2 pb-0">
                     <div className="avatar avatar-xl">
-                      <a href="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/11.jpg" alt="" /></a>
+                      <Link to="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/11.jpg" alt="" /></Link>
                     </div>
-                    <h6 className="card-title mb-1 mt-3"> <a href="#!"> Louis Crawford </a></h6>
+                    <h6 className="card-title mb-1 mt-3"> <Link to="#!"> Louis Crawford </Link></h6>
                     <p className="mb-0 small lh-sm">45 mutual connections</p>
                   </div>
                   { /* <!-- Card footer --> */ }
@@ -763,9 +761,9 @@ export default function PostCol() {
                   { /* <!-- Card body --> */ }
                   <div className="card-body p-2 pb-0">
                     <div className="avatar avatar-xl">
-                      <a href="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/12.jpg" alt="" /></a>
+                      <Link to="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/12.jpg" alt="" /></Link>
                     </div>
-                    <h6 className="card-title mb-1 mt-3"> <a href="#!"> Dennis Barrett </a></h6>
+                    <h6 className="card-title mb-1 mt-3"> <Link to="#!"> Dennis Barrett </Link></h6>
                     <p className="mb-0 small lh-sm">21 mutual connections</p>
                   </div>
                   { /* <!-- Card footer --> */ }
@@ -790,26 +788,26 @@ export default function PostCol() {
             <div className="d-flex align-items-center">
               { /* <!-- Avatar --> */ }
               <div className="avatar me-2">
-                <a href="#"> <img className="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt="" /> </a>
+                <Link to="#"> <img className="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt="" /> </Link>
               </div>
               { /* <!-- Title --> */ }
               <div>
-                <h6 className="card-title mb-0"> <a href="#!"> All in the Mind </a></h6>
+                <h6 className="card-title mb-0"> <Link to="#!"> All in the Mind </Link></h6>
                 <p className="mb-0 small">9 November at 23:29</p>
               </div>
             </div>
             { /* <!-- Card share action menu --> */ }
-            <a href="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardShareAction7" data-bs-toggle="dropdown" aria-expanded="false">
+            <Link to="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardShareAction7" data-bs-toggle="dropdown" aria-expanded="false">
               <i className="bi bi-three-dots"></i>
-            </a>
+            </Link>
             { /* <!-- Card share action dropdown menu --> */ }
             <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction7">
-              <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</a></li>
-              <li><a className="dropdown-item" href="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </a></li>
-              <li><a className="dropdown-item" href="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</a></li>
-              <li><a className="dropdown-item" href="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</a></li>
+              <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</Link></li>
+              <li><Link className="dropdown-item" to="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </Link></li>
+              <li><Link className="dropdown-item" to="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</Link></li>
+              <li><Link className="dropdown-item" to="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</Link></li>
               <li><hr className="dropdown-divider" /></li>
-              <li><a className="dropdown-item" href="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</a></li>
+              <li><Link className="dropdown-item" to="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</Link></li>
             </ul>
           </div>
             { /* <!-- Card share action END --> */ }
@@ -845,10 +843,10 @@ export default function PostCol() {
          { /* <!-- Feed poll votes START --> */ }
           <ul className="nav nav-divider mt-2 mb-0">
             <li className="nav-item">
-              <a className="nav-link" href="#">263 votes</a>
+              <Link className="nav-link" to="#">263 votes</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">2d left</a>
+              <Link className="nav-link" to="#">2d left</Link>
             </li>
           </ul>
           { /* <!-- Feed poll votes ED --> */ }
@@ -856,10 +854,10 @@ export default function PostCol() {
           { /* <!-- Feed react START --> */ }
           <ul className="nav nav-stack pb-2 small mt-4">
             <li className="nav-item">
-              <a className="nav-link active text-secondary" href="#!"> <i className="bi bi-heart-fill me-1 icon-xs bg-danger text-white rounded-circle"></i> Louis, Billy and 126 others </a>
+              <Link className="nav-link active text-secondary" to="#!"> <i className="bi bi-heart-fill me-1 icon-xs bg-danger text-white rounded-circle"></i> Louis, Billy and 126 others </Link>
             </li>
             <li className="nav-item ms-sm-auto">
-              <a className="nav-link" href="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</a>
+              <Link className="nav-link" to="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</Link>
             </li>
           </ul>
           { /* <!-- Feed react END --> */ }
@@ -870,26 +868,26 @@ export default function PostCol() {
           { /* <!-- Feed react START --> */ }
           <ul className="nav nav-fill nav-stack small">
             <li className="nav-item">
-              <a className="nav-link mb-0 active" href="#!"> <i className="bi bi-heart pe-1"></i>Liked (56)</a>
+              <Link className="nav-link mb-0 active" to="#!"> <i className="bi bi-heart pe-1"></i>Liked (56)</Link>
             </li>
             { /* <!-- Card share action dropdown START --> */ }
             <li className="nav-item dropdown">
-              <a href="#" className="nav-link mb-0" id="feedActionShare6" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link to="#" className="nav-link mb-0" id="feedActionShare6" data-bs-toggle="dropdown" aria-expanded="false">
                 <i className="bi bi-reply-fill flip-horizontal ps-1"></i>Share (3)
-              </a>
+              </Link>
               { /* <!-- Card share action dropdown menu --> */ }
               <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="feedActionShare6">
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</Link></li>
                 <li><hr className="dropdown-divider" /></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</Link></li>
               </ul>
             </li>
             { /* <!-- Card share action dropdown END --> */ }
             <li className="nav-item">
-              <a className="nav-link mb-0" href="#!"> <i className="bi bi-send-fill pe-1"></i>Send</a>
+              <Link className="nav-link mb-0" to="#!"> <i className="bi bi-send-fill pe-1"></i>Send</Link>
             </li>
           </ul>
           { /* <!-- Feed react END --> */ }
@@ -906,26 +904,26 @@ export default function PostCol() {
             <div className="d-flex align-items-center">
               { /* <!-- Avatar --> */ }
               <div className="avatar me-2">
-                <a href="#"> <img className="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt="" /> </a>
+                <Link to="#"> <img className="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt="" /> </Link>
               </div>
               { /* <!-- Title --> */ }
               <div>
-                <h6 className="card-title mb-0"> <a href="#!"> All in the Mind </a></h6>
+                <h6 className="card-title mb-0"> <Link to="#!"> All in the Mind </Link></h6>
                 <p className="mb-0 small">9 November at 23:29</p>
               </div>
             </div>
             { /* <!-- Card share action menu --> */ }
-            <a href="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardShareAction10" data-bs-toggle="dropdown" aria-expanded="false">
+            <Link to="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardShareAction10" data-bs-toggle="dropdown" aria-expanded="false">
               <i className="bi bi-three-dots"></i>
-            </a>
+            </Link>
             { /* <!-- Card share action dropdown menu --> */ }
             <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction10">
-              <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</a></li>
-              <li><a className="dropdown-item" href="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </a></li>
-              <li><a className="dropdown-item" href="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</a></li>
-              <li><a className="dropdown-item" href="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</a></li>
+              <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</Link></li>
+              <li><Link className="dropdown-item" to="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </Link></li>
+              <li><Link className="dropdown-item" to="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</Link></li>
+              <li><Link className="dropdown-item" to="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</Link></li>
               <li><hr className="dropdown-divider" /></li>
-              <li><a className="dropdown-item" href="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</a></li>
+              <li><Link className="dropdown-item" to="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</Link></li>
             </ul>
           </div>
             { /* <!-- Card share action END --> */ }
@@ -1005,10 +1003,10 @@ export default function PostCol() {
           { /* <!-- Feed poll votes START --> */ }
           <ul className="nav nav-divider mt-2 mb-0">
             <li className="nav-item">
-              <a className="nav-link" href="#">263 votes</a>
+              <Link className="nav-link" to="#">263 votes</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">2d left</a>
+              <Link className="nav-link" to="#">2d left</Link>
             </li>
           </ul>
           { /* <!-- Feed poll votes ED --> */ }
@@ -1016,10 +1014,10 @@ export default function PostCol() {
           { /* <!-- Feed react START --> */ }
           <ul className="nav nav-stack pb-2 small mt-4">
             <li className="nav-item">
-              <a className="nav-link active text-secondary" href="#!"> <i className="bi bi-heart-fill me-1 icon-xs bg-danger text-white rounded-circle"></i> Louis, Billy and 126 others </a>
+              <Link className="nav-link active text-secondary" to="#!"> <i className="bi bi-heart-fill me-1 icon-xs bg-danger text-white rounded-circle"></i> Louis, Billy and 126 others </Link>
             </li>
             <li className="nav-item ms-sm-auto">
-              <a className="nav-link" href="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</a>
+              <Link className="nav-link" to="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</Link>
             </li>
           </ul>
           { /* <!-- Feed react END --> */ }
@@ -1030,26 +1028,26 @@ export default function PostCol() {
           { /* <!-- Feed react START --> */ }
           <ul className="nav nav-fill nav-stack small">
             <li className="nav-item">
-              <a className="nav-link mb-0 active" href="#!"> <i className="bi bi-heart pe-1"></i>Liked (56)</a>
+              <Link className="nav-link mb-0 active" to="#!"> <i className="bi bi-heart pe-1"></i>Liked (56)</Link>
             </li>
             { /* <!-- Card share action dropdown START --> */ }
             <li className="nav-item dropdown">
-              <a href="#" className="nav-link mb-0" id="feedActionShare8" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link to="#" className="nav-link mb-0" id="feedActionShare8" data-bs-toggle="dropdown" aria-expanded="false">
                 <i className="bi bi-reply-fill flip-horizontal ps-1"></i>Share (3)
-              </a>
+              </Link>
               { /* <!-- Card share action dropdown menu --> */ }
               <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="feedActionShare8">
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</Link></li>
                 <li><hr className="dropdown-divider" /></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</Link></li>
               </ul>
             </li>
             { /* <!-- Card share action dropdown END --> */ }
             <li className="nav-item">
-              <a className="nav-link mb-0" href="#!"> <i className="bi bi-send-fill pe-1"></i>Send</a>
+              <Link className="nav-link mb-0" to="#!"> <i className="bi bi-send-fill pe-1"></i>Send</Link>
             </li>
           </ul>
           { /* <!-- Feed react END --> */ }
@@ -1067,27 +1065,27 @@ export default function PostCol() {
             <div className="d-flex align-items-center">
               { /* <!-- Avatar --> */ }
               <div className="avatar me-2">
-                <a href="#!"> <img className="avatar-img rounded-circle" src="assets/images/logo/11.svg" alt="" /> </a>
+                <Link to="#!"> <img className="avatar-img rounded-circle" src="assets/images/logo/11.svg" alt="" /> </Link>
               </div>
               { /* <!-- Info --> */ }
               <div>
-                <h6 className="card-title mb-0"> <a href="#!"> Webestica </a></h6>
+                <h6 className="card-title mb-0"> <Link to="#!"> Webestica </Link></h6>
                 <p className="small mb-0">9 December at 10:00 </p>
               </div>
             </div>
             { /* <!-- Card share action START --> */ }
             <div className="dropdown">
-              <a href="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardShareAction8" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link to="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardShareAction8" data-bs-toggle="dropdown" aria-expanded="false">
                 <i className="bi bi-three-dots"></i>
-              </a>
+              </Link>
               { /* <!-- Card share action dropdown menu --> */ }
               <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction8">
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</Link></li>
                 <li><hr className="dropdown-divider" /></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</Link></li>
               </ul>
             </div>
             { /* <!-- Card share action START --> */ }
@@ -1097,13 +1095,13 @@ export default function PostCol() {
         
         { /* <!-- Card body START --> */ }
         <div className="card-body">
-          <p className="mb-0">The next-generation blog, news, and magazine theme for you to start sharing your content today with beautiful aesthetics! This minimal & clean Bootstrap 5 based theme is ideal for all types of sites that aim to provide users with content. <a href="#!"> #bootstrap</a> <a href="#!"> #webestica </a> <a href="#!"> #getbootstrap</a> <a href="#"> #bootstrap5 </a></p>
+          <p className="mb-0">The next-generation blog, news, and magazine theme for you to start sharing your content today with beautiful aesthetics! This minimal & clean Bootstrap 5 based theme is ideal for all types of sites that aim to provide users with content. <Link to="#!"> #bootstrap</Link> <Link to="#!"> #webestica </Link> <Link to="#!"> #getbootstrap</Link> <Link to="#"> #bootstrap5 </Link></p>
         </div>
         { /* <!-- Card body END --> */ }
-        <a href="#!"> <img src="assets/images/post/3by2/03.jpg" alt="" /> </a>
+        <Link to="#!"> <img src="assets/images/post/3by2/03.jpg" alt="" /> </Link>
         { /* <!-- Card body START --> */ }
         <div className="card-body position-relative bg-light">
-          <a href="#!" className="small stretched-link">https://blogzine.webestica.com</a>
+          <Link to="#!" className="small stretched-link">https://blogzine.webestica.com</Link>
           <h6 className="mb-0 mt-1">Blogzine - Blog and Magazine Bootstrap 5 Theme</h6>
           <p className="mb-0 small">Bootstrap based News, Magazine and Blog Theme</p>
         </div>
@@ -1114,29 +1112,29 @@ export default function PostCol() {
           { /* <!-- Feed react START --> */ }
           <ul className="nav nav-fill nav-stack small">
             <li className="nav-item">
-              <a className="nav-link mb-0 active" href="#!"> <i className="bi bi-heart pe-1"></i>Liked (56)</a>
+              <Link className="nav-link mb-0 active" to="#!"> <i className="bi bi-heart pe-1"></i>Liked (56)</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link mb-0" href="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</a>
+              <Link className="nav-link mb-0" to="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</Link>
             </li>
             { /* <!-- Card share action dropdown START --> */ }
             <li className="nav-item dropdown">
-              <a href="#" className="nav-link mb-0" id="feedActionShare7" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link to="#" className="nav-link mb-0" id="feedActionShare7" data-bs-toggle="dropdown" aria-expanded="false">
                 <i className="bi bi-reply-fill flip-horizontal ps-1"></i>Share (3)
-              </a>
+              </Link>
               { /* <!-- Card share action dropdown menu --> */ }
               <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="feedActionShare7">
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</Link></li>
                 <li><hr className="dropdown-divider" /></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</Link></li>
               </ul>
             </li>
             { /* <!-- Card share action dropdown END --> */ }
             <li className="nav-item">
-              <a className="nav-link mb-0" href="#!"> <i className="bi bi-send-fill pe-1"></i>Send</a>
+              <Link className="nav-link mb-0" to="#!"> <i className="bi bi-send-fill pe-1"></i>Send</Link>
             </li>
           </ul>
           { /* <!-- Feed react END --> */ }
@@ -1154,12 +1152,12 @@ export default function PostCol() {
             <div className="d-flex align-items-center">
               { /* <!-- Avatar --> */ }
               <div className="avatar avatar-story me-2">
-                <a href="#!"> <img className="avatar-img rounded-circle" src="assets/images/avatar/12.jpg" alt="" /> </a>
+                <Link to="#!"> <img className="avatar-img rounded-circle" src="assets/images/avatar/12.jpg" alt="" /> </Link>
               </div>
               { /* <!-- Info --> */ }
               <div>
                 <div className="nav nav-divider">
-                  <h6 className="nav-item card-title mb-0"> <a href="#!"> Joan Wallace </a></h6>
+                  <h6 className="nav-item card-title mb-0"> <Link to="#!"> Joan Wallace </Link></h6>
                   <span className="nav-item small"> 1day</span>
                 </div>
                 <p className="mb-0 small">12 January at 12:00</p>
@@ -1167,17 +1165,17 @@ export default function PostCol() {
             </div>
             { /* <!-- Card feed action dropdown START --> */ }
             <div className="dropdown">
-              <a href="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardFeedAction2" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link to="#" className="text-secondary btn btn-secondary-soft-hover py-1 px-2" id="cardFeedAction2" data-bs-toggle="dropdown" aria-expanded="false">
                 <i className="bi bi-three-dots"></i>
-              </a>
+              </Link>
               { /* <!-- Card feed action dropdown menu --> */ }
               <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction2">
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</a></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Save post</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-person-x fa-fw pe-2"></i>Unfollow lori ferguson </Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-x-circle fa-fw pe-2"></i>Hide post</Link></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-slash-circle fa-fw pe-2"></i>Block</Link></li>
                 <li><hr className="dropdown-divider" /></li>
-                <li><a className="dropdown-item" href="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</a></li>
+                <li><Link className="dropdown-item" to="#"> <i className="bi bi-flag fa-fw pe-2"></i>Report post</Link></li>
               </ul>
             </div>
             { /* <!-- Card feed action dropdown END --> */ }
@@ -1186,7 +1184,7 @@ export default function PostCol() {
         { /* <!-- Card header END --> */ }
         { /* <!-- Card body START --> */ }
         <div className="card-body pb-0">
-          <p>Comfort reached gay perhaps chamber his <a href="#!">#internship</a>  <a href="#!">#hiring</a> <a href="#!">#apply</a> </p>
+          <p>Comfort reached gay perhaps chamber his <Link to="#!">#internship</Link>  <Link to="#!">#hiring</Link> <Link to="#!">#apply</Link> </p>
         </div>
           { /* <!-- Card img --> */ }
           <div className="overflow-hidden fullscreen-video w-100">
@@ -1205,24 +1203,24 @@ export default function PostCol() {
           <div className="card-body pt-0">
             <ul className="nav nav-stack py-3 small">
               <li className="nav-item">
-                <a className="nav-link active" href="#!"> <i className="bi bi-hand-thumbs-up-fill pe-1"></i>Liked (56)</a>
+                <Link className="nav-link active" to="#!"> <i className="bi bi-hand-thumbs-up-fill pe-1"></i>Liked (56)</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</a>
+                <Link className="nav-link" to="#!"> <i className="bi bi-chat-fill pe-1"></i>Comments (12)</Link>
               </li>
               { /* <!-- Card share action START --> */ }
               <li className="nav-item dropdown ms-sm-auto">
-                <a className="nav-link mb-0" href="#" id="cardShareAction9" data-bs-toggle="dropdown" aria-expanded="false">
+                <Link className="nav-link mb-0" to="#" id="cardShareAction9" data-bs-toggle="dropdown" aria-expanded="false">
                   <i className="bi bi-reply-fill flip-horizontal ps-1"></i>Share (3)
-                </a>
+                </Link>
                 { /* <!-- Card share action dropdown menu --> */ }
                 <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction9">
-                  <li><a className="dropdown-item" href="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</a></li>
-                  <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </a></li>
-                  <li><a className="dropdown-item" href="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</a></li>
-                  <li><a className="dropdown-item" href="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</a></li>
+                  <li><Link className="dropdown-item" to="#"> <i className="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</Link></li>
+                  <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark </Link></li>
+                  <li><Link className="dropdown-item" to="#"> <i className="bi bi-link fa-fw pe-2"></i>Copy link to post</Link></li>
+                  <li><Link className="dropdown-item" to="#"> <i className="bi bi-share fa-fw pe-2"></i>Share post via …</Link></li>
                   <li><hr className="dropdown-divider" /></li>
-                  <li><a className="dropdown-item" href="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</a></li>
+                  <li><Link className="dropdown-item" to="#"> <i className="bi bi-pencil-square fa-fw pe-2"></i>Share to News Feed</Link></li>
                 </ul>
               </li>
               { /* <!-- Card share action END --> */ }
@@ -1233,7 +1231,7 @@ export default function PostCol() {
             <div className="d-flex mb-3">
               { /* <!-- Avatar --> */ }
               <div className="avatar avatar-xs me-2">
-                <a href="#!"> <img className="avatar-img rounded-circle" src="assets/images/avatar/12.jpg" alt="" /> </a>
+                <Link to="#!"> <img className="avatar-img rounded-circle" src="assets/images/avatar/12.jpg" alt="" /> </Link>
               </div>
               { /* <!-- Comment box  --> */ }
               { /* <!-- Comment box  --> */ }
@@ -1250,13 +1248,13 @@ export default function PostCol() {
                 <div className="d-flex">
                   { /* <!-- Avatar --> */ }
                   <div className="avatar avatar-xs">
-                    <a href="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt="" /></a>
+                    <Link to="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt="" /></Link>
                   </div>
                   <div className="ms-2">
                     { /* <!-- Comment by --> */ }
                     <div className="bg-light rounded-start-top-0 p-3 rounded">
                       <div className="d-flex justify-content-between">
-                        <h6 className="mb-1"> <a href="#!"> Frances Guerrero </a></h6>
+                        <h6 className="mb-1"> <Link to="#!"> Frances Guerrero </Link></h6>
                         <small className="ms-2">5hr</small>
                       </div>
                       <p className="small mb-0">Preference any astonished unreserved Mrs.</p>
@@ -1264,13 +1262,13 @@ export default function PostCol() {
                     { /* <!-- Comment react --> */ }
                     <ul className="nav nav-divider py-2 small">
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> Like (3)</a>
+                        <Link className="nav-link" to="#!"> Like (3)</Link>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> Reply</a>
+                        <Link className="nav-link" to="#!"> Reply</Link>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#!"> View 5 replies</a>
+                        <Link className="nav-link" to="#!"> View 5 replies</Link>
                       </li>
                     </ul>
                   </div>
@@ -1282,13 +1280,13 @@ export default function PostCol() {
                     <div className="d-flex">
                       { /* <!-- Avatar --> */ }
                       <div className="avatar avatar-xs">
-                        <a href="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/06.jpg" alt="" /></a>
+                        <Link to="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/06.jpg" alt="" /></Link>
                       </div>
                       { /* <!-- Comment by --> */ }
                       <div className="ms-2">
                         <div className="bg-light p-3 rounded">
                           <div className="d-flex justify-content-between">
-                            <h6 className="mb-1"> <a href="#!"> Lori Stevens </a> </h6>
+                            <h6 className="mb-1"> <Link to="#!"> Lori Stevens </Link> </h6>
                             <small className="ms-2">2hr</small>
                           </div>
                           <p className="small mb-0">Dependent on so extremely delivered by. Yet ﻿no jokes worse her why.</p>
@@ -1296,10 +1294,10 @@ export default function PostCol() {
                         { /* <!-- Comment react --> */ }
                         <ul className="nav nav-divider py-2 small">
                           <li className="nav-item">
-                            <a className="nav-link" href="#!"> Like (5)</a>
+                            <Link className="nav-link" to="#!"> Like (5)</Link>
                           </li>
                           <li className="nav-item">
-                            <a className="nav-link" href="#!"> Reply</a>
+                            <Link className="nav-link" to="#!"> Reply</Link>
                           </li>
                         </ul>
                       </div>
@@ -1317,28 +1315,28 @@ export default function PostCol() {
           { /* <!-- Card footer START --> */ }
           <div className="card-footer border-0 pt-0">
             { /* <!-- Load more comments --> */ }
-            <a href="#!" role="button" className="btn btn-link btn-link-loader btn-sm text-secondary d-flex align-items-center" data-bs-toggle="button" aria-pressed="true">
+            <Link to="#!" role="button" className="btn btn-link btn-link-loader btn-sm text-secondary d-flex align-items-center" data-bs-toggle="button" aria-pressed="true">
               <div className="spinner-dots me-2">
                 <span className="spinner-dot"></span>
                 <span className="spinner-dot"></span>
                 <span className="spinner-dot"></span>
               </div>
               Load more comments 
-            </a>
+            </Link>
           </div>
           { /* <!-- Card footer END --> */ }
       </div>
         { /* <!-- Card feed item END --> */ }
 
         { /* <!-- Load more button START --> */ }
-        <a href="#!" role="button" className="btn btn-loader btn-primary-soft" data-bs-toggle="button" aria-pressed="true">
+        <Link to="#!" role="button" className="btn btn-loader btn-primary-soft" data-bs-toggle="button" aria-pressed="true">
           <span className="load-text"> Load more </span>
           <div className="load-icon">
             <div className="spinner-grow spinner-grow-sm" role="status">
               <span className="visually-hidden">Loading...</span>
             </div>
           </div>
-        </a>
+        </Link>
         { /* <!-- Load more button END --> */ }
 
     </>

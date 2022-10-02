@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function ProfileEvents() {
   return (
@@ -9,7 +10,7 @@ export default function ProfileEvents() {
           <div className="card-header d-sm-flex align-items-center justify-content-between border-0 pb-0">
             <h5 className="card-title mb-sm-0">Discover Events</h5>
             {/* <!-- Button modal --> */ }
-            <a className="btn btn-primary-soft btn-sm" href="#"> <i className="fa-solid fa-plus pe-1"></i> Create events</a>
+            <Link className="btn btn-primary-soft btn-sm" to="#"> <i className="fa-solid fa-plus pe-1"></i> Create events</Link>
           </div>
           {/* <!-- Card header END --> */ }
           {/* <!-- Card body START --> */ }
@@ -17,7 +18,7 @@ export default function ProfileEvents() {
             {/* <!-- Upcoming event START --> */ }
             <div className="alert alert-success alert-dismissible fade show" role="alert">
               <strong>Upcoming event:</strong> The learning conference on Sep 19 2022
-              <a href="events.html" className="btn btn-xs btn-success ms-md-4">View event</a>
+              <Link to="events" className="btn btn-xs btn-success ms-md-4">View event</Link>
               <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             {/* <!-- Upcoming event END --> */ }
@@ -26,11 +27,11 @@ export default function ProfileEvents() {
               <div className="d-sm-flex align-items-center">
                 {/* <!-- Avatar --> */ }
                 <div className="avatar avatar-xl">
-                  <a href="#!"><img className="avatar-img rounded border border-white border-3" src="assets/images/events/01.jpg" alt="" /></a>
+                  <Link to="#!"><img className="avatar-img rounded border border-white border-3" src="assets/images/events/01.jpg" alt="" /></Link>
                 </div>
                 <div className="ms-sm-4 mt-2 mt-sm-0">
                   {/* <!-- Info --> */ }
-                  <h5 className="mb-1"><a href="event-details.html"> Comedy on the green </a></h5>
+                  <h5 className="mb-1"><Link to="event-details"> Comedy on the green </Link></h5>
                   <ul className="nav nav-stack small">
                     <li className="nav-item">
                        <i className="bi bi-calendar-check pe-1"></i> Mon, Sep 25, 2020 at 9:30 AM
@@ -52,11 +53,11 @@ export default function ProfileEvents() {
                     </button>
                     {/* <!-- Card share action dropdown menu --> */ }
                     <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="profileAction">
-                      <li><a className="dropdown-item" href="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Share profile in a message</a></li>
-                      <li><a className="dropdown-item" href="#"> <i className="bi bi-file-earmark-pdf fa-fw pe-2"></i>Save your profile to PDF</a></li>
-                      <li><a className="dropdown-item" href="#"> <i className="bi bi-lock fa-fw pe-2"></i>Lock profile</a></li>
+                      <li><Link className="dropdown-item" to="#"> <i className="bi bi-bookmark fa-fw pe-2"></i>Share profile in a message</Link></li>
+                      <li><Link className="dropdown-item" to="#"> <i className="bi bi-file-earmark-pdf fa-fw pe-2"></i>Save your profile to PDF</Link></li>
+                      <li><Link className="dropdown-item" to="#"> <i className="bi bi-lock fa-fw pe-2"></i>Lock profile</Link></li>
                       <li><hr className="dropdown-divider"/></li>
-                      <li><a className="dropdown-item" href="#"> <i className="bi bi-gear fa-fw pe-2"></i>Profile settings</a></li>
+                      <li><Link className="dropdown-item" to="#"> <i className="bi bi-gear fa-fw pe-2"></i>Profile settings</Link></li>
                     </ul>
                   </div>
                 </div>

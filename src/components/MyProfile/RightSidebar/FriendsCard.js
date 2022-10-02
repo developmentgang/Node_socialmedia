@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function FriendsCard() {
   return (
@@ -9,7 +10,7 @@ export default function FriendsCard() {
                 { /* <!-- Card header START --> */  }
                 <div className="card-header d-sm-flex justify-content-between align-items-center border-0">
                   <h5 className="card-title">Friends <span className="badge bg-danger bg-opacity-10 text-danger">230</span></h5>
-                  <a className="btn btn-primary-soft btn-sm" href="#!"> See all friends</a>
+                  <Link className="btn btn-primary-soft btn-sm" to="#!"> See all friends</Link>
                 </div>
                 { /* <!-- Card header END --> */  }
                 { /* <!-- Card body START --> */  }
@@ -22,9 +23,9 @@ export default function FriendsCard() {
                         { /* <!-- Card body --> */  }
                         <div className="card-body p-2 pb-0">
                           <div className="avatar avatar-story avatar-xl">
-                            <a href="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/02.jpg" alt="" /></a>
+                            <Link to="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/02.jpg" alt="" /></Link>
                           </div>
-                          <h6 className="card-title mb-1 mt-3"> <a href="#!"> Amanda Reed </a></h6>
+                          <h6 className="card-title mb-1 mt-3"> <Link to="#!"> Amanda Reed </Link></h6>
                           <p className="mb-0 small lh-sm">16 mutual connections</p>
                         </div>
                         { /* <!-- Card footer --> */  }
@@ -42,9 +43,9 @@ export default function FriendsCard() {
                         { /* <!-- Card body --> */  }
                         <div className="card-body p-2 pb-0">
                           <div className="avatar avatar-xl">
-                            <a href="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt="" /></a>
+                            <Link to="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt="" /></Link>
                           </div>
-                          <h6 className="card-title mb-1 mt-3"> <a href="#!"> Samuel Bishop </a></h6>
+                          <h6 className="card-title mb-1 mt-3"> <Link to="#!"> Samuel Bishop </Link></h6>
                           <p className="mb-0 small lh-sm">22 mutual connections</p>
                         </div>
                         { /* <!-- Card footer --> */  }
@@ -62,9 +63,9 @@ export default function FriendsCard() {
                         { /* <!-- Card body --> */  }
                         <div className="card-body p-2 pb-0">
                           <div className="avatar avatar-xl">
-                            <a href="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt="" /></a>
+                            <Link to="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt="" /></Link>
                           </div>
-                          <h6 className="card-title mb-1 mt-3"> <a href="#"> Bryan Knight </a></h6>
+                          <h6 className="card-title mb-1 mt-3"> <Link to="#"> Bryan Knight </Link></h6>
                           <p className="mb-0 small lh-sm">1 mutual connection</p>
                         </div>
                         { /* <!-- Card footer --> */  }
@@ -82,9 +83,9 @@ export default function FriendsCard() {
                         { /* <!-- Card body --> */  }
                         <div className="card-body p-2 pb-0">
                           <div className="avatar avatar-xl">
-                            <a href="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt="" /></a>
+                            <Link to="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt="" /></Link>
                           </div>
-                          <h6 className="card-title mb-1 mt-3"> <a href="#!"> Amanda Reed </a></h6>
+                          <h6 className="card-title mb-1 mt-3"> <Link to="#!"> Amanda Reed </Link></h6>
                           <p className="mb-0 small lh-sm">15 mutual connections</p>
                         </div>
                         { /* <!-- Card footer --> */  }

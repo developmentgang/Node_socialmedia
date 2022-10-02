@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function UsersComp() {
   return (
@@ -17,30 +18,30 @@ export default function UsersComp() {
                 <div className="hstack gap-2 mb-3">
                   { /* <!-- Avatar -->*/ }
                   <div className="avatar">
-                    <a href="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt="" /></a>
+                    <Link to="#!"><img className="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt="" /></Link>
                   </div>
                   { /* <!-- Title -->*/ }
                   <div className="overflow-hidden">
-                    <a className="h6 mb-0" href="#!">Judy Nguyen </a>
+                    <Link className="h6 mb-0" to="#!">Judy Nguyen </Link>
                     <p className="mb-0 small text-truncate">News anchor</p>
                   </div>
                   { /* <!-- Button -->*/ }
-                  <a className="btn btn-primary-soft rounded-circle icon-md ms-auto" href="#"><i className="fa-solid fa-plus"> </i></a>
+                  <Link className="btn btn-primary-soft rounded-circle icon-md ms-auto" to="#"><i className="fa-solid fa-plus"> </i></Link>
                 </div>
                 { /* <!-- Connection item END -->*/ }
                 { /* <!-- Connection item START -->*/ }
                   <div className="hstack gap-2 mb-3">
                     { /* <!-- Avatar -->*/ }
                     <div className="avatar avatar-story">
-                      <a href="#!"> <img className="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt="" /> </a>
+                      <Link to="#!"> <img className="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt="" /> </Link>
                     </div>
                     { /* <!-- Title -->*/ }
                     <div className="overflow-hidden">
-                      <a className="h6 mb-0" href="#!">Amanda Reed </a>
+                      <Link className="h6 mb-0" to="#!">Amanda Reed </Link>
                       <p className="mb-0 small text-truncate">Web Developer</p>
                     </div>
                     { /* <!-- Button -->*/ }
-                    <a className="btn btn-primary-soft rounded-circle icon-md ms-auto" href="#"><i className="fa-solid fa-plus"> </i></a>
+                    <Link className="btn btn-primary-soft rounded-circle icon-md ms-auto" to="#"><i className="fa-solid fa-plus"> </i></Link>
                 </div>
                 { /* <!-- Connection item END -->*/ }
 
@@ -48,15 +49,15 @@ export default function UsersComp() {
                 <div className="hstack gap-2 mb-3">
                   { /* <!-- Avatar -->*/ }
                   <div className="avatar">
-                    <a href="#"> <img className="avatar-img rounded-circle" src="assets/images/avatar/11.jpg" alt="" /> </a>
+                    <Link to="#"> <img className="avatar-img rounded-circle" src="assets/images/avatar/11.jpg" alt="" /> </Link>
                   </div>
                   { /* <!-- Title -->*/ }
                   <div className="overflow-hidden">
-                    <a className="h6 mb-0" href="#!">Billy Vasquez </a>
+                    <Link className="h6 mb-0" to="#!">Billy Vasquez </Link>
                     <p className="mb-0 small text-truncate">News anchor</p>
                   </div>
                   { /* <!-- Button -->*/ }
-                  <a className="btn btn-primary rounded-circle icon-md ms-auto" href="#"><i className="bi bi-person-check-fill"> </i></a>
+                  <Link className="btn btn-primary rounded-circle icon-md ms-auto" to="#"><i className="bi bi-person-check-fill"> </i></Link>
                 </div>
                 { /* <!-- Connection item END -->*/ }
                 
@@ -64,15 +65,15 @@ export default function UsersComp() {
                 <div className="hstack gap-2 mb-3">
                   { /* <!-- Avatar -->*/ }
                   <div className="avatar">
-                    <a href="#"> <img className="avatar-img rounded-circle" src="assets/images/avatar/01.jpg" alt="" /> </a>
+                    <Link to="#"> <img className="avatar-img rounded-circle" src="assets/images/avatar/01.jpg" alt="" /> </Link>
                   </div>
                   { /* <!-- Title -->*/ }
                   <div className="overflow-hidden">
-                    <a className="h6 mb-0" href="#!">Lori Ferguson </a>
+                    <Link className="h6 mb-0" to="#!">Lori Ferguson </Link>
                     <p className="mb-0 small text-truncate">Web Developer at Webestica</p>
                   </div>
                   { /* <!-- Button -->*/ }
-                  <a className="btn btn-primary-soft rounded-circle icon-md ms-auto" href="#"><i className="fa-solid fa-plus"> </i></a>
+                  <Link className="btn btn-primary-soft rounded-circle icon-md ms-auto" to="#"><i className="fa-solid fa-plus"> </i></Link>
                 </div>
                 { /* <!-- Connection item END -->*/ }
 
@@ -80,21 +81,21 @@ export default function UsersComp() {
                 <div className="hstack gap-2 mb-3">
                   { /* <!-- Avatar -->*/ }
                   <div className="avatar">
-                    <a href="#"> <img className="avatar-img rounded-circle" src="assets/images/avatar/placeholder.jpg" alt="" /> </a>
+                    <Link to="#"> <img className="avatar-img rounded-circle" src="assets/images/avatar/placeholder.jpg" alt="" /> </Link>
                   </div>
                   { /* <!-- Title -->*/ }
                   <div className="overflow-hidden">
-                    <a className="h6 mb-0" href="#!">Carolyn Ortiz </a>
+                    <Link className="h6 mb-0" to="#!">Carolyn Ortiz </Link>
                     <p className="mb-0 small text-truncate">News anchor</p>
                   </div>
                   { /* <!-- Button -->*/ }
-                  <a className="btn btn-primary-soft rounded-circle icon-md ms-auto" href="#"><i className="fa-solid fa-plus"> </i></a>
+                  <Link className="btn btn-primary-soft rounded-circle icon-md ms-auto" to="#"><i className="fa-solid fa-plus"> </i></Link>
                 </div>
                 { /* <!-- Connection item END -->*/ }
 
                 { /* <!-- View more button -->*/ }
                 <div className="d-grid mt-3">
-                  <a className="btn btn-sm btn-primary-soft" href="#!">View more</a>
+                  <Link className="btn btn-sm btn-primary-soft" to="#!">View more</Link>
                 </div>
               </div>
               { /* <!-- Card body END -->*/ }

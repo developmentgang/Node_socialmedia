@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navigation() {
     return (
@@ -38,72 +38,72 @@ export default function Navigation() {
                         <ul className="navbar-nav navbar-nav-scroll ms-auto">
                             { /* <!-- Nav item 1 Demos -->  */}
                             <li className="nav-item dropdown">
-                                <a className="nav-link active dropdown-toggle" href="#" id="homeMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Demo</a>
+                                <Link className="nav-link active dropdown-toggle" to="#" id="homeMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Demo</Link>
                                 <ul className="dropdown-menu" aria-labelledby="homeMenu">
-                                    <li> <a className="dropdown-item active" href="index-2.html">Home default</a></li>
-                                    <li> <a className="dropdown-item" href="index-classic.html">Home classic</a></li>
-                                    <li> <a className="dropdown-item" href="index-post.html">Home post</a></li>
-                                    <li> <a className="dropdown-item" href="index-video.html">Home video</a></li>
-                                    <li> <a className="dropdown-item" href="index-event.html">Home event</a></li>
-                                    <li> <a className="dropdown-item" href="landing.html">Landing page</a></li>
-                                    <li> <a className="dropdown-item" href="app-download.html">App download</a></li>
+                                    <li> <Link className="dropdown-item active" to="index-2">Home default</Link></li>
+                                    <li> <Link className="dropdown-item" to="index-classic">Home classic</Link></li>
+                                    <li> <Link className="dropdown-item" to="index-post">Home post</Link></li>
+                                    <li> <Link className="dropdown-item" to="index-video">Home video</Link></li>
+                                    <li> <Link className="dropdown-item" to="index-event">Home event</Link></li>
+                                    <li> <Link className="dropdown-item" to="landing">Landing page</Link></li>
+                                    <li> <Link className="dropdown-item" to="app-download">App download</Link></li>
                                     <li className="dropdown-divider"></li>
                                     <li>
-                                        <a className="dropdown-item" href="https://themes.getbootstrap.com/store/webestica/" target="_blank">
+                                        <Link className="dropdown-item" to="https://themes.getbootstrap.com/store/webestica/" target="_blank">
                                             <i className="text-success fa-fw bi bi-cloud-download-fill me-2"></i>Buy Social!
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                             { /* <!-- Nav item 2 Pages -->  */}
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                <Link className="nav-link dropdown-toggle" to="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</Link>
                                 <ul className="dropdown-menu" aria-labelledby="pagesMenu">
-                                    <li> <a className="dropdown-item" href="albums.html">Albums</a></li>
-                                    <li> <a className="dropdown-item" href="celebration.html">Celebration</a></li>
-                                    <li> <a className="dropdown-item" href="messaging.html">Messaging</a></li>
+                                    <li> <Link className="dropdown-item" to="albums">Albums</Link></li>
+                                    <li> <Link className="dropdown-item" to="celebration">Celebration</Link></li>
+                                    <li> <Link className="dropdown-item" to="messaging">Messaging</Link></li>
                                     { /* <!-- Dropdown submenu -->  */}
                                     <li className="dropdown-submenu dropend">
-                                        <a className="dropdown-item dropdown-toggle" href="#!">Profile</a>
+                                        <Link className="dropdown-item dropdown-toggle" to="#!">Profile</Link>
                                         <ul className="dropdown-menu" data-bs-popper="none">
-                                            <li> <a className="dropdown-item" href="my-profile.html">Feed</a> </li>
-                                            <li> <a className="dropdown-item" href="my-profile-about.html">About</a> </li>
-                                            <li> <a className="dropdown-item" href="my-profile-connections.html">Connections</a> </li>
-                                            <li> <a className="dropdown-item" href="my-profile-media.html">Media</a> </li>
-                                            <li> <a className="dropdown-item" href="my-profile-videos.html">Videos</a> </li>
-                                            <li> <a className="dropdown-item" href="my-profile-events.html">Events</a> </li>
-                                            <li> <a className="dropdown-item" href="my-profile-activity.html">Activity</a> </li>
+                                            <li> <Link className="dropdown-item" to="my-profile">Feed</Link> </li>
+                                            <li> <Link className="dropdown-item" to="my-profile-about">About</Link> </li>
+                                            <li> <Link className="dropdown-item" to="my-profile-connections">Connections</Link> </li>
+                                            <li> <Link className="dropdown-item" to="my-profile-media">Media</Link> </li>
+                                            <li> <Link className="dropdown-item" to="my-profile-videos">Videos</Link> </li>
+                                            <li> <Link className="dropdown-item" to="my-profile-events">Events</Link> </li>
+                                            <li> <Link className="dropdown-item" to="my-profile-activity">Activity</Link> </li>
                                         </ul>
                                     </li>
-                                    <li> <a className="dropdown-item" href="events.html">Events</a></li>
-                                    <li> <a className="dropdown-item" href="events-2.html">Events 2</a></li>
-                                    <li> <a className="dropdown-item" href="event-details.html">Event details</a></li>
-                                    <li> <a className="dropdown-item" href="event-details-2.html">Event details 2</a></li>
-                                    <li> <a className="dropdown-item" href="groups.html">Groups</a></li>
-                                    <li> <a className="dropdown-item" href="group-details.html">Group details</a></li>
-                                    <li> <a className="dropdown-item" href="post-videos.html">Post videos</a></li>
-                                    <li> <a className="dropdown-item" href="post-video-details.html">Post video details</a></li>
-                                    <li> <a className="dropdown-item" href="post-details.html">Post details</a></li>
-                                    <li> <a className="dropdown-item" href="video-details.html">Video details</a></li>
-                                    <li> <a className="dropdown-item" href="blog.html">Blog</a></li>
-                                    <li> <a className="dropdown-item" href="blog-details.html">Blog details</a></li>
+                                    <li> <Link className="dropdown-item" to="events">Events</Link></li>
+                                    <li> <Link className="dropdown-item" to="events-2">Events 2</Link></li>
+                                    <li> <Link className="dropdown-item" to="event-details">Event details</Link></li>
+                                    <li> <Link className="dropdown-item" to="event-details-2">Event details 2</Link></li>
+                                    <li> <Link className="dropdown-item" to="groups">Groups</Link></li>
+                                    <li> <Link className="dropdown-item" to="group-details">Group details</Link></li>
+                                    <li> <Link className="dropdown-item" to="post-videos">Post videos</Link></li>
+                                    <li> <Link className="dropdown-item" to="post-video-details">Post video details</Link></li>
+                                    <li> <Link className="dropdown-item" to="post-details">Post details</Link></li>
+                                    <li> <Link className="dropdown-item" to="video-details">Video details</Link></li>
+                                    <li> <Link className="dropdown-item" to="blog">Blog</Link></li>
+                                    <li> <Link className="dropdown-item" to="blog-details">Blog details</Link></li>
 
                                     { /* <!-- Dropdown submenu levels -->  */}
                                     <li className="dropdown-divider"></li>
                                     <li className="dropdown-submenu dropend">
-                                        <a className="dropdown-item dropdown-toggle" href="#">Dropdown levels</a>
+                                        <Link className="dropdown-item dropdown-toggle" to="#">Dropdown levels</Link>
                                         <ul className="dropdown-menu dropdown-menu-end" data-bs-popper="none">
-                                            <li> <a className="dropdown-item" href="#">Dropdown item</a> </li>
-                                            <li> <a className="dropdown-item" href="#">Dropdown item</a> </li>
+                                            <li> <Link className="dropdown-item" to="#">Dropdown item</Link> </li>
+                                            <li> <Link className="dropdown-item" to="#">Dropdown item</Link> </li>
                                             { /* <!-- dropdown submenu open left -->  */}
                                             <li className="dropdown-submenu dropstart">
-                                                <a className="dropdown-item dropdown-toggle" href="#">Dropdown (start)</a>
+                                                <Link className="dropdown-item dropdown-toggle" to="#">Dropdown (start)</Link>
                                                 <ul className="dropdown-menu dropdown-menu-end" data-bs-popper="none">
-                                                    <li> <a className="dropdown-item" href="#">Dropdown item</a> </li>
-                                                    <li> <a className="dropdown-item" href="#">Dropdown item</a> </li>
+                                                    <li> <Link className="dropdown-item" to="#">Dropdown item</Link> </li>
+                                                    <li> <Link className="dropdown-item" to="#">Dropdown item</Link> </li>
                                                 </ul>
                                             </li>
-                                            <li> <a className="dropdown-item" href="#">Dropdown item</a> </li>
+                                            <li> <Link className="dropdown-item" to="#">Dropdown item</Link> </li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -111,35 +111,35 @@ export default function Navigation() {
 
                             { /* <!-- Nav item 3 Post -->  */}
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="postMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account </a>
+                                <Link className="nav-link dropdown-toggle" to="#" id="postMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account </Link>
                                 <ul className="dropdown-menu" aria-labelledby="postMenu">
-                                    <li> <a className="dropdown-item" href="create-page.html">Create a page</a></li>
-                                    <li> <a className="dropdown-item" href="settings.html">Settings</a> </li>
-                                    <li> <a className="dropdown-item" href="notifications.html">Notifications</a> </li>
-                                    <li> <a className="dropdown-item" href="help.html">Help center</a> </li>
-                                    <li> <a className="dropdown-item" href="help-details.html">Help details</a> </li>
+                                    <li> <Link className="dropdown-item" to="create-page">Create a page</Link></li>
+                                    <li> <Link className="dropdown-item" to="settings">Settings</Link> </li>
+                                    <li> <Link className="dropdown-item" to="notifications">Notifications</Link> </li>
+                                    <li> <Link className="dropdown-item" to="help">Help center</Link> </li>
+                                    <li> <Link className="dropdown-item" to="help-details">Help details</Link> </li>
                                     { /* <!-- dropdown submenu open left -->  */}
                                     <li className="dropdown-submenu dropstart">
-                                        <a className="dropdown-item dropdown-toggle" href="#">Authentication</a>
+                                        <Link className="dropdown-item dropdown-toggle" to="#">Authentication</Link>
                                         <ul className="dropdown-menu dropdown-menu-end" data-bs-popper="none">
-                                            <li> <a className="dropdown-item" href="sign-in.html">Sign in</a> </li>
-                                            <li> <a className="dropdown-item" href="sign-up.html">Sing up</a> </li>
-                                            <li> <a className="dropdown-item" href="forgot-password.html">Forgot password</a> </li>
+                                            <li> <Link className="dropdown-item" to="sign-in">Sign in</Link> </li>
+                                            <li> <Link className="dropdown-item" to="sign-up">Sing up</Link> </li>
+                                            <li> <Link className="dropdown-item" to="forgot-password">Forgot password</Link> </li>
                                             <li className="dropdown-divider"></li>
-                                            <li> <a className="dropdown-item" href="sign-in-advance.html">Sign in advance</a> </li>
-                                            <li> <a className="dropdown-item" href="sign-up-advance.html">Sing up advance</a> </li>
-                                            <li> <a className="dropdown-item" href="forgot-password-advance.html">Forgot password advance</a> </li>
+                                            <li> <Link className="dropdown-item" to="sign-in-advance">Sign in advance</Link> </li>
+                                            <li> <Link className="dropdown-item" to="sign-up-advance">Sing up advance</Link> </li>
+                                            <li> <Link className="dropdown-item" to="forgot-password-advance">Forgot password advance</Link> </li>
                                         </ul>
                                     </li>
-                                    <li> <a className="dropdown-item" href="error-404.html">Error 404</a> </li>
-                                    <li> <a className="dropdown-item" href="offline.html">Offline</a> </li>
-                                    <li> <a className="dropdown-item" href="privacy-and-terms.html">Privacy & terms</a> </li>
+                                    <li> <Link className="dropdown-item" to="error-404">Error 404</Link> </li>
+                                    <li> <Link className="dropdown-item" to="offline">Offline</Link> </li>
+                                    <li> <Link className="dropdown-item" to="privacy-and-terms">Privacy & terms</Link> </li>
                                 </ul>
                             </li>
 
                             { /* <!-- Nav item 4 Mega menu -->  */}
                             <li className="nav-item">
-                                <a className="nav-link" href="my-profile-connections.html">My network</a>
+                                <Link className="nav-link" to="my-profile-connections">My network</Link>
                             </li>
                         </ul>
                     </div>
@@ -148,25 +148,25 @@ export default function Navigation() {
                     { /* <!-- Nav right START -->  */}
                     <ul className="nav flex-nowrap align-items-center ms-sm-3 list-unstyled">
                         <li className="nav-item ms-2">
-                            <a className="nav-link icon-md btn btn-light p-0" href="messaging.html">
+                            <Link className="nav-link icon-md btn btn-light p-0" to="messaging">
                                 <i className="bi bi-chat-left-text-fill fs-6"> </i>
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item ms-2">
-                            <a className="nav-link icon-md btn btn-light p-0" href="settings.html">
+                            <Link className="nav-link icon-md btn btn-light p-0" to="settings">
                                 <i className="bi bi-gear-fill fs-6"> </i>
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item dropdown ms-2">
-                            <a className="nav-link icon-md btn btn-light p-0" href="#" id="notifDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            <Link className="nav-link icon-md btn btn-light p-0" to="#" id="notifDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                                 <span className="badge-notif animation-blink"></span>
                                 <i className="bi bi-bell-fill fs-6"> </i>
-                            </a>
+                            </Link>
                             <div className="dropdown-menu dropdown-animation dropdown-menu-end dropdown-menu-size-md p-0 shadow-lg border-0" aria-labelledby="notifDropdown">
                                 <div className="card">
                                     <div className="card-header d-flex justify-content-between align-items-center">
                                         <h6 className="m-0">Notifications <span className="badge bg-danger bg-opacity-10 text-danger ms-2">4 new</span></h6>
-                                        <a className="small" href="#">Clear all</a>
+                                        <Link className="small" to="#">Clear all</Link>
                                     </div>
                                     <div className="card-body p-0">
                                         <ul className="list-group list-group-flush list-unstyled p-2">
@@ -205,7 +205,7 @@ export default function Navigation() {
                                             </li>
                                             { /* <!-- Notif item -->  */}
                                             <li>
-                                                <a href="#" className="list-group-item list-group-item-action rounded d-flex border-0 mb-1 p-3">
+                                                <Link to="#" className="list-group-item list-group-item-action rounded d-flex border-0 mb-1 p-3">
                                                     <div className="avatar text-center d-none d-sm-inline-block">
                                                         <div className="avatar-img rounded-circle bg-success"><span className="text-white position-absolute top-50 start-50 translate-middle fw-bold">WB</span></div>
                                                     </div>
@@ -215,11 +215,11 @@ export default function Navigation() {
                                                             <p className="small ms-3">1hr</p>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </li>
                                             { /* <!-- Notif item -->  */}
                                             <li>
-                                                <a href="#" className="list-group-item list-group-item-action rounded d-flex border-0 p-3 mb-1">
+                                                <Link to="#" className="list-group-item list-group-item-action rounded d-flex border-0 p-3 mb-1">
                                                     <div className="avatar text-center d-none d-sm-inline-block">
                                                         <img className="avatar-img rounded-circle" src="assets/images/logo/12.svg" alt="" />
                                                     </div>
@@ -227,12 +227,12 @@ export default function Navigation() {
                                                         <p className="small mb-2"><b>Bootstrap in the news:</b> The search giant’s parent company, Alphabet, just joined an exclusive club of tech stocks.</p>
                                                         <p className="small ms-3">4hr</p>
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </div>
                                     <div className="card-footer text-center">
-                                        <a href="#" className="btn btn-sm btn-primary-soft">See all incoming activity</a>
+                                        <Link to="#" className="btn btn-sm btn-primary-soft">See all incoming activity</Link>
                                     </div>
                                 </div>
                             </div>
@@ -240,9 +240,9 @@ export default function Navigation() {
                         { /* <!-- Notification dropdown END -->  */}
 
                         <li className="nav-item ms-2 dropdown">
-                            <a className="nav-link btn icon-md p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
+                            <Link className="nav-link btn icon-md p-0" to="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img className="avatar-img rounded-2" src="assets/images/avatar/07.jpg" alt="" />
-                            </a>
+                            </Link>
                             <ul className="dropdown-menu dropdown-animation dropdown-menu-end pt-3 small me-md-n3" aria-labelledby="profileDropdown">
                                 { /* <!-- Profile info -->  */}
                                 <li className="px-3">
@@ -252,26 +252,26 @@ export default function Navigation() {
                                             <img className="avatar-img rounded-circle" src="assets/images/avatar/07.jpg" alt="avatar" />
                                         </div>
                                         <div>
-                                            <a className="h6 stretched-link" href="#">Lori Ferguson</a>
+                                            <Link className="h6 stretched-link" to="#">Lori Ferguson</Link>
                                             <p className="small m-0">Web Developer</p>
                                         </div>
                                     </div>
-                                    <a className="dropdown-item btn btn-primary-soft btn-sm my-2 text-center" href="my-profile.html">View profile</a>
+                                    <Link className="dropdown-item btn btn-primary-soft btn-sm my-2 text-center" to="my-profile">View profile</Link>
                                 </li>
                                 { /* <!-- Links -->  */}
-                                <li><a className="dropdown-item" href="settings.html"><i className="bi bi-gear fa-fw me-2"></i>Settings & Privacy</a></li>
+                                <li><Link className="dropdown-item" to="settings"><i className="bi bi-gear fa-fw me-2"></i>Settings & Privacy</Link></li>
                                 <li>
-                                    <a className="dropdown-item" href="https://support.webestica.com/" target="_blank">
+                                    <Link className="dropdown-item" to="https://support.webestica.com/" target="_blank">
                                         <i className="fa-fw bi bi-life-preserver me-2"></i>Support
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="docs/index.html" target="_blank">
+                                    <Link className="dropdown-item" to="docs/index" target="_blank">
                                         <i className="fa-fw bi bi-card-text me-2"></i>Documentation
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="dropdown-divider"></li>
-                                <li><a className="dropdown-item bg-danger-soft-hover" href="sign-in-advance.html"><i className="bi bi-power fa-fw me-2"></i>Sign Out</a></li>
+                                <li><Link className="dropdown-item bg-danger-soft-hover" to="sign-in-advance"><i className="bi bi-power fa-fw me-2"></i>Sign Out</Link></li>
                                 <li> <hr className="dropdown-divider" /></li>
                                 { /* <!-- Dark mode switch START -->  */}
                                 <li>

@@ -473,6 +473,7 @@ var e = {
 				var sb = e.select('.sidebar-start-toggle');
 				var mode = document.getElementsByTagName("BODY")[0];
 				sb.addEventListener("click", function(){
+					    
 						mode.classList.toggle("sidebar-start-enabled");
 				}); 
 		}        
