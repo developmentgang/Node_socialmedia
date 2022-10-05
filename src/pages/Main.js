@@ -51,7 +51,7 @@ export default function Main() {
                 <Route path="blog" element={<Blog />} />
 
                 {/* Events */}
-                <Route path="events" element={<Events />} /> 
+                <Route path="events" exact  element={<Events />} /> 
 
                 {/* Notifications */}
                 <Route path="notifications" element={<Notifications />} /> 
