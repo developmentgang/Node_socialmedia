@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 export default function PostCol() {
+ 
   return (
     <>
       { /* <!-- Story START --> */ }
@@ -14,6 +16,7 @@ export default function PostCol() {
           <div className="avatar avatar-xs me-2">
             <Link to="#"> <img className="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt="" /> </Link>
           </div>
+          
           { /* <!-- Post input --> */ }
           <form className="w-100">
             <textarea className="form-control pe-4 border-0" rows="2" data-autoresize placeholder="Share your thoughts..."></textarea>

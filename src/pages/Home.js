@@ -6,7 +6,7 @@ import RecentUpdates from '../components/Home/RecentUpdates'
 import UsersComp from '../components/Home/UsersComp'
 
 
-export default function Home() {
+export default function Home(userData) {
   return (
     <>
     <div className="col-lg-3">
@@ -17,7 +17,7 @@ export default function Home() {
        </div>
        <div className="col-lg-3">
         <div className="row g-4">
-          <UsersComp/>
+          <UsersComp users = {userData}/>
           <RecentUpdates />
         </div>  
        </div>
