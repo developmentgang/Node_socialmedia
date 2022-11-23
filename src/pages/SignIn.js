@@ -5,9 +5,26 @@ import {useNavigate} from 'react-router-dom'
 import md5 from 'md5';
 
 export default function SignIn() {
-
   const navigate = useNavigate()
-  const SignupSchema = Yup.object().shape({
+
+  const AuthCheck = (v) =>{
+    //perform operations on values
+    console.log(v);
+    let email = 'wagnersocnc@gmail.com';
+    let pass = '12345678';
+    let result = email == v.email && pass == v.password ? true : false      
+    if(result)
+    {
+      localStorage.setItem(md5('socialmediaUser'),md5(email+'socialmediUser'))
+      navigate('../')
+    }
+    else
+    {
+     return false  ;
+    }   
+}
+
+  const SignInSchema = Yup.object().shape({
     email: Yup.string().required('Required').matches(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/),
     
     password: Yup.string().length(8)
@@ -18,31 +35,12 @@ export default function SignIn() {
       email: '',
       password: ''
     },
-    validationSchema:  SignupSchema ,
-    onSubmit: values => {
-      // alert(JSON.stringify(values, null, 2));
-      console.log(values)
-      values ? AuthCheck(values) : false      
+    validationSchema:  SignInSchema ,
+    onSubmit: (values) => {
+      console.log("submit --> ")
+      return values ? AuthCheck(values) : false      
     },
   });
-
-  const AuthCheck = (v) =>{
-      //perform operations on values
-      console.log(v);
-      let email = 'wagnersocnc@gmail.com'
-      let pass = '12345678'
-      let result = email == v.email && pass == v.password ? true : false      
-      if(result)
-      {
-        localStorage.setItem(md5('socialmediaUser'),md5(email+'socialmediUser'))
-        navigate('../')
-      }
-      else
-      {
-       return false  ;
-      }   
-      
-  }
 
   return (
     <>

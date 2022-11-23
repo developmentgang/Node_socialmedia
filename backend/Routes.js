@@ -1,20 +1,34 @@
 const express = require('express')
 const app = express()
-const client = require('./Connect.js')
 const userModel = require("./models");
+const connect = require('./Connect')
+var cors = require('cors');
 
-console.log(client)
+app.use(cors());
+app.use(express.json())
 
 app.get('/',async (req,res)=>{
-    const user = new userModel({name: 'shubham',});
+    const user = new userModel({email: 'shubham@gmail.com',password:'123',firstname:"shubham",lastname:"garg",password: "dsfjdfksjf"});
     try {
       await user.save();
-      response.send(user);
+      res.send(user);
     } catch (error) {
-      response.status(500).send(error);
+      res.status(500).send(error);
     }
     res.send('hii')
+})
 
+app.post('/api/create-user', async (req,res)=>{
+  console.log(req.body)
+  // const {email,password} =req.data
+  const user = new userModel({email: req.body?.data?.email,password: req.body?.data?.password});
+  try {
+    await user.save();
+    res.send(user);
+  } catch (error) {
+    res.send(error);
+  }
+  res.send('hii')
 })
 
 module.exports = app;

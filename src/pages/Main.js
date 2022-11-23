@@ -12,6 +12,7 @@ import React, { useEffect, useState } from 'react'
 import Form from "./Form"
 import SignIn from "./SignIn"
 import md5 from "md5"
+import SignUp from "./SignUp"
 
 export default function Main() {
 
@@ -94,6 +95,9 @@ export default function Main() {
 
                 {/* sign-in-advance */}
                 <Route path="sign-in-advance" element={<SignIn />}></Route>
+                
+                {/* sign-Up */}
+                <Route path="sign-up" element={<SignUp />}></Route>
               
               </Routes>
             {/* pages end here */}
