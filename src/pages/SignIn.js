@@ -3,27 +3,10 @@ import React from 'react'
 import * as Yup from 'yup';
 import {useNavigate} from 'react-router-dom'
 import md5 from 'md5';
+import { AuthCheck } from "./request/request";
 
 export default function SignIn() {
   const navigate = useNavigate()
-
-  const AuthCheck = (v) =>{
-    //perform operations on values
-    console.log(v);
-    let email = 'wagnersocnc@gmail.com';
-    let pass = '12345678';
-    let result = email == v.email && pass == v.password ? true : false      
-    if(result)
-    {
-      localStorage.setItem(md5('socialmediaUser'),md5(email+'socialmediUser'))
-      navigate('../')
-    }
-    else
-    {
-     return false  ;
-    }   
-}
-
   const SignInSchema = Yup.object().shape({
     email: Yup.string().required('Required').matches(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/),
     
@@ -37,8 +20,9 @@ export default function SignIn() {
     },
     validationSchema:  SignInSchema ,
     onSubmit: (values) => {
-      console.log("submit --> ")
-      return values ? AuthCheck(values) : false      
+      AuthCheck(values).then((res)=>{
+        console.log(res)
+      })      
     },
   });
 
@@ -58,7 +42,7 @@ export default function SignIn() {
             <div className="card card-body p-4 p-sm-5 mt-sm-n5 mb-n5">
               { /* <!-- Title -->  */}
               <h2 className="h1 mb-2">Sign in</h2>
-              <p>Don't have an account?<a href="sign-up.html"> Click here to sign up</a></p>
+              <p>Don't have an account?<a href="sign-up"> Click here to sign up</a></p>
               { /* <!-- Form START -->  */}
               <form className="mt-4" onSubmit={formik.handleSubmit}>
                 <div className="mb-3 position-relative input-group-lg">

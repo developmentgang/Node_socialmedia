@@ -40,13 +40,11 @@ export default function Main() {
       <div>
         <input type='text' onChange={()=>{setstatr(true)}}></input>
       </div>
-      
     <Navigation/>
       <main>
         <div className="container">
           <div className="row g-4">
             {/* pages start here */}
-            
               <Routes>
                 {/* Home Page */}
                 <Route path="/" element={<Home user = {dataa}/>} />
