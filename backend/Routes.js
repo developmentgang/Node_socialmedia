@@ -37,14 +37,14 @@ app.post('/api/create-user', async (req,res)=>{
 })
 
 app.post('/api/auth', (req,res)=>{
- 
-  const user = new userModel({email:req.body?.data?.email, password: req.body?.data?.password })
-
-  const getUser = User.find({email: req.body?.data?.email, password: req.body?.data?.passwor })
-
-  console.log(getUser)
-  
-  res.send("done")
+  User.find({email: req.body?.data?.email, password: req.body?.data?.password },(error,data)=>{
+    if(error){
+      res.send(error)
+    }
+    else{
+      res.send(data)
+    }
+  })
 })
 
 module.exports = app;

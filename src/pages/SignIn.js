@@ -21,7 +21,14 @@ export default function SignIn() {
     validationSchema:  SignInSchema ,
     onSubmit: (values) => {
       AuthCheck(values).then((res)=>{
-        console.log(res)
+
+        if(res.data.length != 0){
+            localStorage.setItem("user", JSON.stringify(res.data[0]));
+            navigate("/");
+        }
+        else{
+          alert("please check Your credentials")
+        }
       })      
     },
   });

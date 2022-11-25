@@ -10,13 +10,13 @@ export default function SignUp() {
     email: Yup.string()
       .matches(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)
       .required(requiredErr),
-    password: Yup.string().length(8).required(requiredErr),
-    confirmPassword: Yup.string()
-      .oneOf([Yup.ref("password"), null], "Password Match: No")
-      .required(requiredErr),
-    firstname: Yup.string().min(4).required(requiredErr),
-    age: Yup.number().max(99).required(requiredErr),
-    lastname: Yup.string().min(4)
+      password: Yup.string().min(8).required(requiredErr),
+      confirmPassword: Yup.string()
+        .oneOf([Yup.ref("password"), null], "Password Match: No")
+        .required(requiredErr),
+      firstname: Yup.string().min(4).required(requiredErr),
+      age: Yup.number().max(99).required(requiredErr),
+      lastname: Yup.string().min(4)
   });
 
   const formik = useFormik({
@@ -122,9 +122,6 @@ export default function SignUp() {
                   )}
                   {/* --------------------- firstname error --------------- */}
                 </div>
-
-                
-
 
                 {/* <!-- New password --> */}
                 <div className="mb-3 position-relative">

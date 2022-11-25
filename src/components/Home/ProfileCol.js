@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { createContext } from 'react'
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { Context } from '../../pages/Home';
 
 export default function ProfileCol() {
+  const value = useContext(Context);
+  
   return (
     <>
-    
   { /* <!-- Advanced filter responsive toggler START --> */ }
   <div className="d-flex align-items-center d-lg-none">
     <button className="border-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
@@ -45,10 +48,11 @@ export default function ProfileCol() {
                     src="assets/images/avatar/07.jpg" alt="" /></Link>
               </div>
               { /* <!-- Info --> */ }
-              <h5 className="mb-0"> <Link to="#!">Sam Lanson </Link> </h5>
+              <Context.Consumer>
+                {value =>  <><h5 className="mb-0"> <Link to="#!">{value.firstname}</Link> </h5>
               <small>Web Developer at Webestica</small>
-              <p className="mt-3">I'd love to change the world, but they won’t give me the source code.</p>
-
+              <p className="mt-3">I'd love to change the world, but they won’t give me the source code.</p></> }
+              </Context.Consumer>
               { /* <!-- User stat START --> */ }
               <div className="hstack gap-2 gap-xl-3 justify-content-center">
                 { /* <!-- User stat item --> */ }

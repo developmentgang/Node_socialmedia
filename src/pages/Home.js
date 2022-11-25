@@ -1,14 +1,16 @@
-import React from 'react'
-
+import React, { useState,useContext, createContext } from 'react'
 import PostCol from '../components/Home/PostCol'
 import ProfileCol from '../components/Home/ProfileCol'
 import RecentUpdates from '../components/Home/RecentUpdates'
 import UsersComp from '../components/Home/UsersComp'
+export const Context = createContext('value');
 
 
 export default function Home(userData) {
+  const [data, setData] = useState(JSON.parse(localStorage.getItem('user')));
   return (
     <>
+    <Context.Provider value={data}>
     <div className="col-lg-3">
        <ProfileCol/>
        </div>
@@ -21,6 +23,7 @@ export default function Home(userData) {
           <RecentUpdates />
         </div>  
        </div>
+       </Context.Provider>
     </>
   )
 }
